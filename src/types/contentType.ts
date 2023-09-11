@@ -1,4 +1,5 @@
 export type Content = {
-    title: string,
-    about: string
-}
+  headerButton: string[];
+  title: string;
+  about: string;
+};
