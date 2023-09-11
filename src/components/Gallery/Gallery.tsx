@@ -40,7 +40,7 @@ const Gallery = () => {
                   srcSet={`${image.image} 1x, ${image.imageDouble} 2x`}
                   type="image/jpeg"
                 />
-                <img src={image.image} alt="Кіт" />
+                <img src={image.image} alt="event image" />
               </picture>
               <EventTitleWrapper>
                 <EventTitle>{image.title}</EventTitle>
