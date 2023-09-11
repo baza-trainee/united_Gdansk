@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn }) => {
 		<HeaderBar className={`${open ? 'menu-open' : ''}`}>
 			<MenuLeftSide>
 				<Logo onClick={reloadPage}>
-					<img src="./src/assets/img/logo.svg" alt="logo" />
+					<img src="./logo.svg" alt="logo" />
 				</Logo>
 
 				<MenuLanguage>
