@@ -5,6 +5,7 @@ import { loadData } from '../helpers/dataLoader';
 import { Lang } from '../types/langTypes';
 import { Content } from '../types/contentType';
 import useLanguage from '../hooks/useLanguage';
+import Gallery from '../components/Gallery/Gallery';
 
 function App() {
 	const [lang, setLang] = useLanguage();
@@ -22,7 +23,6 @@ function App() {
 	const languageChange = (selectedLanguage: Lang) => {
 		return setLang(selectedLanguage)
 	}
-
 	return (
 		content &&
 		<>
@@ -33,6 +33,7 @@ function App() {
 			<h1>{content?.title}</h1>
 			<p>{content?.about}</p>
 			<p>{content?.headerButton}</p>
+     <Gallery/>
 		</>
 	)
 }
