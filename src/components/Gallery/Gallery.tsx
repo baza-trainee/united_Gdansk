@@ -19,10 +19,18 @@ const Gallery = () => {
         <GalleryTitle>Галерея</GalleryTitle>
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y]}
-          spaceBetween={10}
+          spaceBetween={20}
           slidesPerView={1}
           navigation
-          style={{ paddingTop: "62px" }}
+          breakpoints={{
+            480: {
+              slidesPerView: 2
+            },
+            820:{
+              slidesPerView:3
+            }
+          }}
+          style={{ paddingTop: "32px" }}
           onSlideChange={() => console.log("slide change")}
         >
           {events.map((image) => (

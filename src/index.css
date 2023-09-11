@@ -82,7 +82,9 @@ a {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 button {
@@ -96,7 +98,6 @@ button {
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff;
-  margin-top: -195px;
 }
 .swiper-button-prev:after,
 .swiper-button-next:after {
