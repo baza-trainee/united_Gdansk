@@ -4,9 +4,7 @@ export const GalleryTitle = styled.h2`
   color: #ffffff;
   font-size: 32px;
   font-weight: 400;
-  // position: absolute;
-  // top: 45px;
-  // left: 30%;
+
 `;
 export const GallerySection = styled.section`
   background-color: #0059b2;
