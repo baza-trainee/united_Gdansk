@@ -4,7 +4,6 @@ export const GalleryTitle = styled.h2`
   color: #ffffff;
   font-size: 32px;
   font-weight: 400;
-
 `;
 export const GallerySection = styled.section`
   background-color: #0059b2;
@@ -20,3 +19,4 @@ export const EventTitleWrapper = styled.div`
   padding-top: 14px;
   padding-bottom: 14px;
 `;
+
