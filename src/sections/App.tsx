@@ -6,8 +6,6 @@ import { Lang } from '../types/langTypes';
 import { Content } from '../types/contentType';
 import useLanguage from '../hooks/useLanguage';
 import Gallery from '../components/Gallery/Gallery';
-import Button from "../components/Button/Button.tsx";
-import SecTitle from "../components/SectionTitle/SectionTitle.tsx"
 
 function App() {
 	const [lang, setLang] = useLanguage();
@@ -36,10 +34,7 @@ function App() {
 			<p>{content?.about}</p>
 			<p>{content?.headerButton}</p>
       	<Gallery />
-		<Button buttonTitle="Зробити донат!" link="#" />
 		</>
-		
-		
 	)
 
 }
