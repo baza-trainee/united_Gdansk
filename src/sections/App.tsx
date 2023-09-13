@@ -33,9 +33,10 @@ function App() {
 			<h1>{content?.title}</h1>
 			<p>{content?.about}</p>
 			<p>{content?.headerButton}</p>
-     <Gallery/>
+      	<Gallery />
 		</>
 	)
+
 }
 
 export default App
