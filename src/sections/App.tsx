@@ -1,4 +1,5 @@
 import Header from "../components/Header/Header.tsx"
+import Hero from "../components/Hero/Hero.tsx";
 
 import { useEffect, useState } from 'react'
 import { loadData } from '../helpers/dataLoader';
@@ -30,10 +31,13 @@ function App() {
 				languageChange={languageChange}
 				contentBtn={content.headerButton}
 			/>
+			<Hero />
+
 			<h1>{content?.title}</h1>
 			<p>{content?.about}</p>
 			<p>{content?.headerButton}</p>
-      	<Gallery />
+
+			<Gallery />
 		</>
 	)
 
