@@ -1,13 +1,11 @@
-import { SectionTitle } from "./SectionTitle.styled"
+import { SectionTitle } from "./SectionTitle.styled";
 
 type SectionTitleProps = {
-    title: string;
-}
+  title: string | undefined;
+};
 
-const SecTitle = ({title} : SectionTitleProps) => {
-    return (
-    <SectionTitle>{title}</SectionTitle>
-  );
+const SecTitle = ({ title }: SectionTitleProps) => {
+  return <SectionTitle>{title}</SectionTitle>;
 };
 
 export default SecTitle;
