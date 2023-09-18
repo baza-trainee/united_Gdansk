@@ -1,5 +1,8 @@
 {
   "headerButton": ["O nas", "Działalność", "Galeria", "Łączność"],
+  "heroSection": 
+    { "title": "Zjednoczony. Gdańsk.", "paragraph": "Razem pokonajmy Rosję." }
+  ,
   "title": "Zjednoczony. Gdańsk.",
   "about": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku, aby skupiać ludzi, których łączy wspólna idea i wspólnie rozmawiają o Ukrainie! O wszystkich naszych wydarzeniach informujemy na portalach społecznościowych, więc subskrybuj i bądź na bieżąco! Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu."
 }

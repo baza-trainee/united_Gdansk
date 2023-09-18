@@ -31,7 +31,7 @@ function App() {
 				languageChange={languageChange}
 				contentBtn={content.headerButton}
 			/>
-			<Hero />
+			<Hero contentHero={content.heroSection}/>
 
 			<h1>{content?.title}</h1>
 			<p>{content?.about}</p>

@@ -6,17 +6,27 @@ export const Sliders = styled.section`
   margin: 0 auto;
 `;
 
-export const Slider = styled.div`
+export const SliderWrap = styled.div`
+  height: 100%;
+  position: relative;
+`;
+
+export const SliderOverflow = styled.div`
+  overflow: hidden;
+  height: 100%;
+`;
+
+export const SliderContainer = styled.div`
+  display: flex;
+  height: 100%;
+`;
+
+export const Slider = styled.div<{url: string}>`
   width: 100%;
   height: 100%;
   background-position: center;
   background-size: cover;
   background-image: ${(props) => (props.url ? props.url : ``)};
-`;
-
-export const SliderWrap = styled.div`
-  height: 100%;
-  position: relative;
 `;
 
 export const ArrowLeft = styled.div`
@@ -55,3 +65,4 @@ export const Dot = styled.div`
   height: 50px;
   width: 50px;
 `;
+
