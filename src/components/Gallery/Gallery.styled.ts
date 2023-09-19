@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const GalleryTitle = styled.h2`
   color: #ffffff;
@@ -19,4 +19,3 @@ export const EventTitleWrapper = styled.div`
   padding-top: 14px;
   padding-bottom: 14px;
 `;
-
