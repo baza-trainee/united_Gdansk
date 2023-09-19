@@ -1,7 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Lang } from '../../types/langTypes';
-// import { loadData } from '../../helpers/dataLoader';
-// import { Content } from '../../types/contentType';
+
 
 import {
 	HeaderBar,
@@ -17,11 +16,20 @@ import {
 interface HeaderProps {
 	languageChange: (selectedLanguage: Lang) => void,
 	contentBtn: string[],
+	activeLanguage: string,
 }
 
-const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn }) => {
+const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLanguage }) => {
 
-	const [open, setOpen] = useState<boolean>(false)
+	const [open, setOpen] = useState<boolean>(false);
+	const [language, setLanguage] = useState<string>("UKR");
+
+	useEffect(() => {
+		setLanguage(activeLanguage)
+
+
+	}, [activeLanguage])
+
 
 	const openMenu = (): void => {
 		setOpen(!open)
@@ -40,7 +48,6 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn }) => {
 	)
 
 	return (
-
 		<HeaderBar className={`${open ? 'menu-open' : ''}`}>
 			<MenuLeftSide>
 				<Logo onClick={reloadPage}>
@@ -48,8 +55,11 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn }) => {
 				</Logo>
 
 				<MenuLanguage>
-					<li onClick={() => languageChange(Lang.UA)}>ukr</li>
-					<li onClick={() => languageChange(Lang.PL)}>pl</li>
+					<li
+						className={`${language === Lang.UA ? "active" : ""}`}
+						onClick={() => languageChange(Lang.UA)}>ukr</li>
+					<li
+						className={`${language === Lang.PL ? "active" : ""}`} onClick={() => languageChange(Lang.PL)}>pl</li>
 				</MenuLanguage>
 			</MenuLeftSide>
 

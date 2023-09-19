@@ -1,13 +1,12 @@
 import styled from "@emotion/styled";
 
-
 export const HeaderBar = styled.header`
   align-items: center;
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: space-between;
   padding: 4px 96px 4px 26px;
-  background-color: #FFF;
+  background-color: #fff;
 
   @media (max-width: 768px) {
     padding: 4px 28px;
@@ -29,18 +28,23 @@ export const Logo = styled.div`
 export const MenuLanguage = styled.ul`
   display: flex;
   padding: 10px;
-  gap: 8px;
+  gap: 16px;
   cursor: pointer;
 
   & li {
-    color: #3a3a3a;
     font-family: Roboto;
+    color: #737373;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 24px;
     text-transform: uppercase;
   }
+
+  .active {
+    color: #3a3a3a;
+  }
 `;
+
 export const MenuRightSide = styled.div``;
 
 export const MenuButton = styled.button`
@@ -51,7 +55,7 @@ export const MenuButton = styled.button`
     position: relative;
     width: 30px;
     height: 18px;
-    z-index: 5;
+    z-index: 99;
 
     @media (any-hover: none) {
       cursor: default;
@@ -96,15 +100,15 @@ export const MenuButton = styled.button`
 `;
 
 export const MenuList = styled.nav`
-  min-width: 130px;
-
+  min-width: 100%;
+  z-index: 10;
   @media (max-width: 768px) {
     padding: 76px 28px 30px 15px;
     position: fixed;
     width: 20%;
     height: 100%;
     top: 0;
-    right: -200px;
+    right: -100%;
     background-color: #fff;
     overflow: auto;
     display: flex;
@@ -113,6 +117,7 @@ export const MenuList = styled.nav`
 
     .menu-open & {
       right: 0px;
+      background-color: #fff;
     }
   }
 
@@ -134,10 +139,10 @@ export const MenuList = styled.nav`
       color: #3a3a3a;
       font-family: Roboto;
       font-size: 18px;
-      font-weight: 800;
+      font-weight: 500;
       line-height: 24px;
       letter-spacing: 0.5px;
-		
+
       &:hover {
         color: #ffffff;
       }

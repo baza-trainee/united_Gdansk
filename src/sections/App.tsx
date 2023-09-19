@@ -30,12 +30,13 @@ function App() {
 			<Header
 				languageChange={languageChange}
 				contentBtn={content.headerButton}
+				activeLanguage={lang}
 			/>
-			<Hero contentHero={content.heroSection}/>
+			<Hero contentHero={content.heroSection} />
 
-			<h1>{content?.title}</h1>
+			{/* <h1>{content?.title}</h1>
 			<p>{content?.about}</p>
-			<p>{content?.headerButton}</p>
+			<p>{content?.headerButton}</p> */}
 
 			<Gallery />
 		</>

@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Slides, SlidesTransition } from "../../types/heroType"
-import { Lang } from '../../types/langTypes';
+// import { Lang } from '../../types/langTypes';
 
 import { Sliders, Slider, SliderWrap, ArrowLeft, ArrowRight, DotsContainer, Dot, SliderOverflow, SliderContainer } from "./Hero.styled"
 
@@ -34,31 +34,47 @@ const Hero: React.FC<HeroProps> = ({ contentHero }) => {
 		setCurrentIndex(slideIndex)
 	}
 
+	const [windowSize, setWindowSize] = useState(
+		window.innerWidth
+	);
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setWindowSize(window.innerWidth);
+		};
+
+		window.addEventListener('resize', handleWindowResize);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	}, []);
+
+
 	const slidesTransition = (): SlidesTransition => ({
 		transition: "transform ease-out 0.3s",
-		width: `${1280 * slides.length}px `,
-		transform: `translateX(${-(currentIndex * 1280)}px)`
+		width: `${(windowSize >= 1280 ? 1280 : windowSize) * slides.length}px `,
+		transform: `translateX(${-(currentIndex * (windowSize >= 1280 ? 1280 : windowSize))}px)`
 	})
+
+
+	const renderSlider = slides.map((_, slideIndex) => (
+		<Slider key={slideIndex} url={`url(${slides[slideIndex].url})`} >
+			<h2>{contentHero.title}</h2>
+			<p>{contentHero.paragraph}</p>
+		</Slider>
+	))
 
 	return (
 		<Sliders >
 
 			<SliderWrap  >
 				<ArrowLeft onClick={goToPrevious} />
-
-
 				<SliderOverflow >
 					<SliderContainer style={slidesTransition()}>
-						{slides.map((_, slideIndex) => (
-							<Slider key={slideIndex} url={`url(${slides[slideIndex].url})`} >
-								<h2>{contentHero.title}</h2>
-								<p>{contentHero.paragraph}</p>
-
-							</Slider>
-
-
-
-						))}
+						{
+							renderSlider
+						}
 					</SliderContainer>
 				</SliderOverflow>
 
