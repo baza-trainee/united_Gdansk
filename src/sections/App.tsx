@@ -35,9 +35,9 @@ function App() {
         <h1>{content?.title}</h1>
         <p>{content?.about}</p>
         <p>{content?.headerButton}</p>
-        <Donation />
+        <Donation content={content} />
         <Gallery />
-        <Assistance />
+        <Assistance content={content} />
       </>
     )
   );

@@ -1,24 +1,20 @@
 import Button from '../Button/Button';
 import { DonationSection, DonationText, DonationTitle, DonationInner } from './Donation.styled';
+import { Content } from '../../types/contentType';
 
-const Assistance = () => {
+const Donation = ({ content }: { content: Content }) => {
   return (
     <DonationSection>
-      <DonationTitle>Донати</DonationTitle>
+      <DonationTitle>{content?.donation.title}</DonationTitle>
       <DonationInner>
-        <DonationText>
-          Кожний донат важливий, та наближає нашу Перемогу. Незалежно від того, чи це маленький
-          внесок або великий вклад, кожна допомога робить різницю. Це наша спільна мета, і разом ми
-          досягнемо її. Дякуємо за вашу підтримку
-        </DonationText>
+        <DonationText>{content?.donation.text}</DonationText>
         <Button
-          buttonTitle={'Задонатити'}
+          buttonTitle={content?.donationButton}
           link={'#'}
-          className={'button donation__link'}
         />
       </DonationInner>
     </DonationSection>
   );
 };
 
-export default Assistance;
+export default Donation;

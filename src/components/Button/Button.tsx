@@ -3,14 +3,11 @@ import { Btn } from './Button.styled';
 type IPropsBtn = {
   buttonTitle: string;
   link: string;
-  className: string;
 };
 
-const Button = ({ buttonTitle, link, className }: IPropsBtn) => {
+const Button = ({ buttonTitle, link }: IPropsBtn) => {
   return (
-    <Btn
-      type="button"
-      className={className}>
+    <Btn type="button">
       <a href={link}>{buttonTitle}</a>
     </Btn>
   );

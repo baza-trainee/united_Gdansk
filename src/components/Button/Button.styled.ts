@@ -12,7 +12,11 @@ export const Btn = styled.button`
   line-height: 24px;
   font-weight: 700;
 
-  @media (max-width: 320px) {
+  @media (max-width: 1050px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 350px) {
     width: 212px;
   }
 `;

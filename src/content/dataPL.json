@@ -1,5 +1,14 @@
 {
   "headerButton": ["O nas", "Działalność", "Galeria", "Łączność"],
   "title": "Zjednoczony. Gdańsk.",
-  "about": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku, aby skupiać ludzi, których łączy wspólna idea i wspólnie rozmawiają o Ukrainie! O wszystkich naszych wydarzeniach informujemy na portalach społecznościowych, więc subskrybuj i bądź na bieżąco! Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu."
+  "about": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku, aby skupiać ludzi, których łączy wspólna idea i wspólnie rozmawiają o Ukrainie! O wszystkich naszych wydarzeniach informujemy na portalach społecznościowych, więc subskrybuj i bądź na bieżąco! Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu.",
+  "donation": {
+    "title": "Darowizny",
+    "text": "Każda darowizna jest ważna i przybliża nasze Zwycięstwo. Niezależnie od tego, czy jest to niewielki, czy duży wkład, każda darowizna ma znaczenie. To jest nasz wspólny cel i wspólnie go osiągniemy. Dziękuję za Twoje wsparcie"
+  },
+  "assistance": {
+    "title": "Pomoc SZU",
+    "text": "Jak mówi współczesny ukraiński poeta Serhij Żadan, zwracamy się do Was, drodzy bracia i siostry! Ojciec najbliższego przyjaciela naszej Oleny służy obecnie w 46. Batalionie Powietrznodesantowo-Szturmowym Sił Zbrojnych Ukrainy, a teraz wraz z towarzyszami znajduje się na pierwszej linii frontu, w kierunku Bachmuta. Wszyscy rozumiemy, że sytuacja jest teraz bardzo trudna i ci goście naprawdę potrzebują naszej pomocy. Jego zespół potrzebuje pomocy, konieczny jest zakup kamery termowizyjnej. Zbiórka jest otwarta – jej celem jest zakup kamery termowizyjnej. Część środków została już zebrana, ale potrzebujemy Waszej pomocy! Planujemy zamówić kamerę termowizyjną w Polsce. Będziemy wdzięczni za każdą wpłatę i udostępnienie. Raporty z naszych wydatków można znaleźć w naszych sieciach społecznościowych. Bardziej szczegółowe informacje na temat zbiórki znajdują się na stronie Oleńki, aby uratować i nie narazić rodziny jej przyjaciółki na niebezpieczeństwo."
+  },
+  "donationButton": "Darowizna"
 }
