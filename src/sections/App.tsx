@@ -1,4 +1,5 @@
-import Header from "../components/Header/Header.tsx";
+import Header from "../components/Header/Header.tsx"
+import Hero from "../components/Hero/Hero.tsx";
 
 import { useEffect, useState } from "react";
 import { loadData } from "../helpers/dataLoader";
@@ -17,13 +18,14 @@ function App() {
       const data = await loadData(lang);
       setContent(data);
     };
+		fetchData();
+	}, [lang])
 
-    fetchData();
-  }, [lang]);
 
   const languageChange = (selectedLanguage: Lang) => {
     return setLang(selectedLanguage);
   };
+  
   return (
     content && (
       <>
@@ -31,6 +33,7 @@ function App() {
           languageChange={languageChange}
           contentBtn={content.headerButton}
         />
+        <Hero contentHero={content.heroSection} />
         <Gallery content={content} lang={lang}  />
         <AboutRallies content={content} />
       </>
