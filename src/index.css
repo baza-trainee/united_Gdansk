@@ -91,7 +91,13 @@ img {
 .swiper-button-next {
   color: #fff;
 }
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  font-size: 30px;
+.swiper-pagination.swiper-pagination-bullets {
+  bottom: 10px;
+}
+.swiper-pagination-bullet {
+  background-color: #d9d9d9 !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #3a3a3a !important;
 }

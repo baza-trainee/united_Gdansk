@@ -1,7 +1,15 @@
 {
   "headerButton": ["O nas", "Działalność", "Galeria", "Łączność"],
+  "heroSection": { "title": "Zjednoczony. Gdańsk.", "paragraph": "Razem pokonajmy Rosję." },
   "title": "Zjednoczony. Gdańsk.",
   "about": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku, aby skupiać ludzi, których łączy wspólna idea i wspólnie rozmawiają o Ukrainie! O wszystkich naszych wydarzeniach informujemy na portalach społecznościowych, więc subskrybuj i bądź na bieżąco! Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu.",
+  "aboutRollies": {
+    "title": "O wiecu",
+    "text": "Od sierpnia 2022 roku będziemy organizować wiece na rzecz Ukrainy, a także rozpowszechniać informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze wiece stały się miejscem, w którym ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom konfliktu. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzeniach na Ukrainie i wspierać ją na drodze do pokoju i wolności."
+  },
+  "aboutGallery": {
+    "title": "Galeria"
+  },
   "donation": {
     "title": "Darowizny",
     "text": "Każda darowizna jest ważna i przybliża nasze Zwycięstwo. Niezależnie od tego, czy jest to niewielki, czy duży wkład, każda darowizna ma znaczenie. To jest nasz wspólny cel i wspólnie go osiągniemy. Dziękuję za Twoje wsparcie"
