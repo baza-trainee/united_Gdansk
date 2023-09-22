@@ -10,4 +10,13 @@ export type Content = {
   aboutGallery: {
     title: string;
   };
+  donationButton: string;
+  donation: {
+    title: string;
+    text: string;
+  };
+  assistance: {
+    title: string;
+    text: string;
+  };
 };
