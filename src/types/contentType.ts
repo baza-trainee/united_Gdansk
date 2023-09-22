@@ -3,6 +3,10 @@ export type Content = {
   heroSection: { title: string; paragraph: string };
   title: string;
   about: string;
+  nets: {
+    title: string;
+    text: string;
+  }
   aboutRollies: {
     title: string;
     text: string;

@@ -9,6 +9,7 @@ import Gallery from '../components/Gallery/Gallery';
 import AboutRallies from '../components/AboutRallies/AboutRallies.tsx';
 import Donation from '../components/Donation/Donation.tsx';
 import Assistance from '../components/Assistance/Assistance.tsx';
+import Nets from '../components/Nets/Nets.tsx';
 
 function App() {
   const [lang, setLang] = useLanguage();
@@ -33,9 +34,7 @@ function App() {
           languageChange={languageChange}
           contentBtn={content.headerButton}
         />
-        <h1>{content?.title}</h1>
-        <p>{content?.about}</p>
-        <p>{content?.headerButton}</p>
+        <Nets content={content} />
         <Hero contentHero={content.heroSection} />
         <Donation content={content} />
         <Gallery
