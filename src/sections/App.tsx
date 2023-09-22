@@ -1,13 +1,14 @@
-import Header from "../components/Header/Header.tsx"
-import Hero from "../components/Hero/Hero.tsx";
-
-import { useEffect, useState } from "react";
-import { loadData } from "../helpers/dataLoader";
-import { Lang } from "../types/langTypes";
-import { Content } from "../types/contentType";
-import useLanguage from "../hooks/useLanguage";
-import Gallery from "../components/Gallery/Gallery";
-import AboutRallies from "../components/AboutRallies/AboutRallies.tsx";
+import { useEffect, useState } from 'react';
+import { loadData } from '../helpers/dataLoader';
+import { Lang } from '../types/langTypes';
+import { Content } from '../types/contentType';
+import Header from '../components/Header/Header.tsx';
+import Hero from '../components/Hero/Hero.tsx';
+import useLanguage from '../hooks/useLanguage';
+import Gallery from '../components/Gallery/Gallery';
+import AboutRallies from '../components/AboutRallies/AboutRallies.tsx';
+import Donation from '../components/Donation/Donation.tsx';
+import Assistance from '../components/Assistance/Assistance.tsx';
 
 function App() {
   const [lang, setLang] = useLanguage();
@@ -18,14 +19,13 @@ function App() {
       const data = await loadData(lang);
       setContent(data);
     };
-		fetchData();
-	}, [lang])
-
+    fetchData();
+  }, [lang]);
 
   const languageChange = (selectedLanguage: Lang) => {
     return setLang(selectedLanguage);
   };
-  
+
   return (
     content && (
       <>
@@ -33,9 +33,17 @@ function App() {
           languageChange={languageChange}
           contentBtn={content.headerButton}
         />
+        <h1>{content?.title}</h1>
+        <p>{content?.about}</p>
+        <p>{content?.headerButton}</p>
         <Hero contentHero={content.heroSection} />
-        <Gallery content={content} lang={lang}  />
+        <Donation content={content} />
+        <Gallery
+          content={content}
+          lang={lang}
+        />
         <AboutRallies content={content} />
+        <Assistance content={content} />
       </>
     )
   );
