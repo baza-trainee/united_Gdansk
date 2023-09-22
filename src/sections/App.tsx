@@ -7,8 +7,8 @@ import Hero from '../components/Hero/Hero.tsx';
 import useLanguage from '../hooks/useLanguage';
 import Gallery from '../components/Gallery/Gallery';
 import AboutRallies from '../components/AboutRallies/AboutRallies.tsx';
-import Donation from '../components/Donation/Donation.tsx';
 import Assistance from '../components/Assistance/Assistance.tsx';
+import Donation from '../components/Donation/Donation.tsx';
 
 function App() {
   const [lang, setLang] = useLanguage();
