@@ -1,6 +1,9 @@
 import SecTitle from "../SectionTitle/SectionTitle";
 import {
-    
+    NetsSection,
+    NetsPicWrapper,
+    NetsWrapper,
+    NetsContent
 } from "./Nets.styled";
 import { Content } from '../../types/contentType';
 
@@ -10,18 +13,18 @@ const Nets = ({ content }: { content: Content }) => {
             <NetsPicWrapper>
                 <picture>
                     <source
-                        srcSet={` ./images/nets/nets1x.jpg 1x, ./images/aboutUs/aboutUs2x.jpg 2x`}
+                        srcSet={` ./images/nets/nets1x.jpg 1x, ./images/nets/nets2x.jpg 2x`}
                         type="image/jpeg"
                     />
                     <img
-                        src="./images/aboutUs/aboutUs1x.jpg"
-                        alt="Ми"
+                        src="./images/nets/nets1x.jpg"
+                        alt="Плетіння сіток"
                     />
                 </picture>
             </NetsPicWrapper>
             <NetsWrapper>
-                <SecTitle title={content?.aboutUs.title} />
-                <NetsContent>{content?.aboutUs.text}</AboutUsContent>
+                <SecTitle title={content?.nets.title} />
+                <NetsContent>{content?.nets.text}</NetsContent>
             </NetsWrapper>
         </NetsSection>
     )
