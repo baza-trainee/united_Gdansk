@@ -1,5 +1,6 @@
 import Header from "../components/Header/Header.tsx"
 import Hero from "../components/Hero/Hero.tsx";
+import Footer from "../components/Footer/Footer.tsx"
 
 import { useEffect, useState } from "react";
 import { loadData } from "../helpers/dataLoader";
@@ -36,6 +37,7 @@ function App() {
         <Hero contentHero={content.heroSection} />
         <Gallery content={content} lang={lang}  />
         <AboutRallies content={content} />
+        <Footer content={content} />
       </>
     )
   );

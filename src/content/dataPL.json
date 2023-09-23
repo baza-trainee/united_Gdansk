@@ -11,5 +11,16 @@
   },
   "aboutGallery":{
     "title":"Galeria"
+  },
+
+  "footer": {
+    "titleMenu": "O nas",
+    "diaMenu": "Działalność",
+    "galeryMenu": "Galeria",
+    "titleContact": "Zjednoczeni Gdańsk",
+    "address": "m. Gdańsk",
+    "email": "e-mail: zjednoczeni.gdansk@gmail.com",
+    "titleSocial": "My w mediach",
+    "developer": "Developer Baza Trainee Ukraine 2023 Zjegnoczeni_Gdansk © Wszystkie prawa zastrzeżone"
   }
 }

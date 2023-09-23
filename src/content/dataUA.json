@@ -12,6 +12,16 @@
   },
   "aboutGallery":{
     "title":"Галерея"
-  }
-
+  },
+  
+"footer": {
+"titleMenu": "Про нас", 
+"diaMenu": "Діяльність", 
+"galeryMenu": "Галерея",
+"titleContact": "Zjednoczeni Gdańsk",
+"address": "м. Ґданськ",
+"email": "e-mail: zjednoczeni.gdansk@gmail.com",
+"titleSocial": "Ми в соцмережах",
+"developer": "Розробник Baza Trainee Ukraine 2023 Zjegnoczeni_Gdansk © Всі права захищені"
+}
 }

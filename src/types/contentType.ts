@@ -10,4 +10,14 @@ export type Content = {
   aboutGallery: {
     title: string;
   };
+  footer: {
+    titleMenu: string;
+    diaMenu: string;
+    galeryMenu: string;
+    titleContact: string;
+    address: string;
+    email: string;
+    titleSocial: string;
+    developer: string;
+}
 };
