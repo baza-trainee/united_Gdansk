@@ -4,6 +4,7 @@ export type Content = {
   title: string;
   about: string;
   nets: {
+  aboutUs: {
     title: string;
     text: string;
   }

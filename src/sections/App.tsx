@@ -6,10 +6,12 @@ import Header from '../components/Header/Header.tsx';
 import Hero from '../components/Hero/Hero.tsx';
 import useLanguage from '../hooks/useLanguage';
 import Gallery from '../components/Gallery/Gallery';
+
 import AboutRallies from '../components/AboutRallies/AboutRallies.tsx';
 import Donation from '../components/Donation/Donation.tsx';
 import Assistance from '../components/Assistance/Assistance.tsx';
 import Nets from '../components/Nets/Nets.tsx';
+import AboutUs from '../components/AboutUs/AboutUs.tsx';
 
 function App() {
   const [lang, setLang] = useLanguage();
@@ -23,9 +25,11 @@ function App() {
     fetchData();
   }, [lang]);
 
+
   const languageChange = (selectedLanguage: Lang) => {
     return setLang(selectedLanguage);
   };
+
 
   return (
     content && (
@@ -36,6 +40,7 @@ function App() {
         />
         <Nets content={content} />
         <Hero contentHero={content.heroSection} />
+        <AboutUs content={content}/>
         <Donation content={content} />
         <Gallery
           content={content}
