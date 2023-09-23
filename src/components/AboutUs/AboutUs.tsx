@@ -1,16 +1,16 @@
 import SecTitle from "../SectionTitle/SectionTitle";
 import {
     AboutUsSection,
-    AboutUsPicWrapper,
     AboutUsContent,
     AboutUsWrapper,
+    ImageAboutUsWrapper
 } from "./AboutUs.styled";
 import { Content } from '../../types/contentType';
 
 const AboutUs = ({ content }: { content: Content }) => {
     return (
         <AboutUsSection>
-            <AboutUsPicWrapper>
+            <ImageAboutUsWrapper>
                 <picture>
                     <source
                         srcSet={` ./images/aboutUs/aboutUs1x.jpg 1x, ./images/aboutUs/aboutUs2x.jpg 2x`}
@@ -21,7 +21,7 @@ const AboutUs = ({ content }: { content: Content }) => {
                         alt="Ми"
                     />
                 </picture>
-            </AboutUsPicWrapper>
+            </ImageAboutUsWrapper>
             <AboutUsWrapper>
                 <SecTitle title={content?.aboutUs.title} />
                 <AboutUsContent>{content?.aboutUs.text}</AboutUsContent>
