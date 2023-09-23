@@ -38,15 +38,15 @@ function App() {
           languageChange={languageChange}
           contentBtn={content.headerButton}
         />
-        <Nets content={content} />
         <Hero contentHero={content.heroSection} />
         <AboutUs content={content}/>
+        <Nets content={content} />
         <Donation content={content} />
+        <AboutRallies content={content} />
         <Gallery
           content={content}
           lang={lang}
         />
-        <AboutRallies content={content} />
         <Assistance content={content} />
       </>
     )
