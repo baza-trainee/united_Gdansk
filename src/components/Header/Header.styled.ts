@@ -8,8 +8,12 @@ export const HeaderBar = styled.header`
   padding: 4px 96px 4px 26px;
   background-color: #fff;
 
+  @media (max-width: 1279px) {
+    padding: 4px 30px;
+  }
+
   @media (max-width: 768px) {
-    padding: 4px 28px;
+    padding: 4px 20px;
   }
 `;
 export const MenuLeftSide = styled.div`
@@ -23,6 +27,7 @@ export const Logo = styled.div`
   min-height: 84px;
   min-width: 84px;
   position: relative;
+  cursor: pointer;
   z-index: 5;
 `;
 export const MenuLanguage = styled.ul`
@@ -50,7 +55,7 @@ export const MenuRightSide = styled.div``;
 export const MenuButton = styled.button`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1279px) {
     display: block;
     position: relative;
     width: 30px;
@@ -102,7 +107,7 @@ export const MenuButton = styled.button`
 export const MenuList = styled.nav`
   min-width: 100%;
   z-index: 10;
-  @media (max-width: 768px) {
+  @media (max-width: 1279px) {
     padding: 76px 28px 30px 15px;
     position: fixed;
     width: 20%;
@@ -127,7 +132,7 @@ export const MenuList = styled.nav`
     row-gap: 3px;
     column-gap: 40px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1279px) {
       display: flex;
       flex-direction: column;
       flex: 1 1 auto;
