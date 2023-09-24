@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const RalliesSection = styled.section`
+export const AboutUsSection = styled.section`
   margin-top: 40px;
 
   @media screen and (min-width: 768px) {
@@ -15,10 +15,21 @@ export const RalliesSection = styled.section`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
   }
 `;
-export const RalliesText = styled.p`
+export const AboutUsWrapper = styled.div`
+  margin-top: 36px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0;
+    margin-left: 110px;
+  }
+`;
+
+export const AboutUsContent = styled.p`
   font-size: 18px;
   font-weight: 400;
   margin-top: 12px;
@@ -26,8 +37,6 @@ export const RalliesText = styled.p`
   margin-right: 20px;
   line-height: 1.5;
   text-align: justify;
-  // width: 288px;
-
   @media screen and (min-width: 768px) {
     width: 548px;
     margin-top: 16px;
@@ -36,20 +45,11 @@ export const RalliesText = styled.p`
   @media screen and (min-width: 1280px) {
     width: 428px;
     margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 `;
-export const RalliesWrapper = styled.div`
-  margin-top: 36px;
-
-  @media screen and (min-width: 768px) {
-    margin-top: 60px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-top: 0;
-    margin-left: 112px;
-  }
-`;
-export const ImageRalliesWrapper = styled.div`
+export const ImageAboutUsWrapper = styled.div`
   @media screen and (min-width: 768px) {
     width: 548px;
   }
