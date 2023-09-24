@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { loadData } from '../helpers/dataLoader';
 import { Lang } from '../types/langTypes';
@@ -38,6 +37,7 @@ function App() {
         <Header
           languageChange={languageChange}
           contentBtn={content.headerButton}
+					activeLanguage={lang}
         />
         <Hero contentHero={content.heroSection} />
         <AboutUs content={content}/>
