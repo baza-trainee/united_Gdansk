@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { loadData } from '../helpers/dataLoader';
 import { Lang } from '../types/langTypes';
@@ -6,7 +7,7 @@ import Header from '../components/Header/Header.tsx';
 import Hero from '../components/Hero/Hero.tsx';
 import useLanguage from '../hooks/useLanguage';
 import Gallery from '../components/Gallery/Gallery';
-
+import Footer from "../components/Footer/Footer.tsx"
 import AboutRallies from '../components/AboutRallies/AboutRallies.tsx';
 import Donation from '../components/Donation/Donation.tsx';
 import Assistance from '../components/Assistance/Assistance.tsx';
@@ -42,12 +43,13 @@ function App() {
         <AboutUs content={content}/>
         <Nets content={content} />
         <Donation content={content} />
-        <AboutRallies content={content} />
+        <AboutRallies content={content} /
         <Gallery
           content={content}
           lang={lang}
         />
         <Assistance content={content} />
+        <Footer content={content} />
       </>
     )
   );

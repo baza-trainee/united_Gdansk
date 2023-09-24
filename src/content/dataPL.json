@@ -18,6 +18,16 @@
     "title": "O wiecu",
     "text": "Od sierpnia 2022 roku będziemy organizować wiece na rzecz Ukrainy, a także rozpowszechniać informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze wiece stały się miejscem, w którym ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom konfliktu. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzeniach na Ukrainie i wspierać ją na drodze do pokoju i wolności."
   },
+  "footer": {
+    "titleMenu": "O nas",
+    "diaMenu": "Działalność",
+    "galeryMenu": "Galeria",
+    "titleContact": "Zjednoczeni Gdańsk",
+    "address": "m. Gdańsk",
+    "email": "e-mail: zjednoczeni.gdansk@gmail.com",
+    "titleSocial": "My w mediach",
+    "developer": "Developer Baza Trainee Ukraine 2023 Zjegnoczeni_Gdansk © Wszystkie prawa zastrzeżone"
+  },
   "aboutGallery": {
     "title": "Galeria"
   },
