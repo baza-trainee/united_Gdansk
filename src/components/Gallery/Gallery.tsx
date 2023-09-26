@@ -24,7 +24,7 @@ const Gallery = ({ content, lang }: IGallery) => {
   const screenWidth = window.innerWidth;
   return (
     <>
-      <GallerySection>
+      <GallerySection id="gallery">
         <GalleryTitle>{content.aboutGallery.title}</GalleryTitle>
         <Swiper
           modules={[Navigation, Pagination, A11y]}

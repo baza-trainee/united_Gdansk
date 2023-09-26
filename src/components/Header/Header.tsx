@@ -15,6 +15,8 @@ import {
 const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLanguage }) => {
 
 	const [open, setOpen] = useState<boolean>(false);
+	const anchorLink = ["aboutUs", "activities", "gallery", "contacts"]
+
 
 	const openMenu = (): void => {
 		setOpen(!open)
@@ -27,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLangu
 	const renderMenuList: JSX.Element[] = contentBtn.map(
 		(array: string, index: number): JSX.Element => (
 			<li key={index}>
-				<a href="#">{array}</a>
+				<a href={`#${anchorLink[index]}`} onClick={openMenu}>{array}</a>
 			</li>
 		)
 	)
@@ -49,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLangu
 			</MenuLeftSide>
 
 			<MenuRightSide>
-				<MenuButton onClick={openMenu}>
+				<MenuButton onClick={openMenu} className={open ? "fixed" : ""}>
 					<span></span>
 				</MenuButton>
 
