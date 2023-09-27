@@ -39,5 +39,10 @@
     "title": "Pomoc SZU",
     "text": "Jak mówi współczesny ukraiński poeta Serhij Żadan, zwracamy się do Was, drodzy bracia i siostry! Ojciec najbliższego przyjaciela naszej Oleny służy obecnie w 46. Batalionie Powietrznodesantowo-Szturmowym Sił Zbrojnych Ukrainy, a teraz wraz z towarzyszami znajduje się na pierwszej linii frontu, w kierunku Bachmuta. Wszyscy rozumiemy, że sytuacja jest teraz bardzo trudna i ci goście naprawdę potrzebują naszej pomocy. Jego zespół potrzebuje pomocy, konieczny jest zakup kamery termowizyjnej. Zbiórka jest otwarta – jej celem jest zakup kamery termowizyjnej. Część środków została już zebrana, ale potrzebujemy Waszej pomocy! Planujemy zamówić kamerę termowizyjną w Polsce. Będziemy wdzięczni za każdą wpłatę i udostępnienie. Raporty z naszych wydatków można znaleźć w naszych sieciach społecznościowych. Bardziej szczegółowe informacje na temat zbiórki znajdują się na stronie Oleńki, aby uratować i nie narazić rodziny jej przyjaciółki na niebezpieczeństwo."
   },
-  "donationButton": "Darowizna"
+  "donationButton": "Darowizna",
+  "errorPage": {
+    "errorPageTitle": "Strona, której szukasz, została przeniesiona lub nie istnieje.",
+    "errorPageBtn": "Główna",
+    "errorPage404": "404"
+  }
 }
