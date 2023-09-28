@@ -5,13 +5,19 @@ export const GalleryTitle = styled.h2`
   font-size: 32px;
   font-weight: 400;
 `;
-export const GallerySection = styled.section`
-  background-color: #0059b2;
+export const GallerySection = styled.section<{ bg: boolean }>`
+  background-color: ${(props) => (props.bg ? "#0059b2" : "#0059b2")};
   padding-top: 12px;
   position: relative;
-  @media screen and (min-width: 320px) {
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (min-width: 768px) {
     padding-left: 35px;
     padding-right: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 export const EventTitle = styled.p`
