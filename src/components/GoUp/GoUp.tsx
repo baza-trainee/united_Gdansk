@@ -41,12 +41,12 @@ const GoUp = () => {
             width="44"
             height="44"
             transform="rotate(-90 0 44)"
-            fill="#3A3A3A"
-            fillOpacity="0.8"
+            fill="white"
+            fillOpacity="0.6"
           />
           <path
             d="M12.2222 26.8887L22.2222 16.8887L32.2222 26.8887"
-            stroke="white"
+            stroke="black"
             strokeWidth="2"
             strokeLinecap="square"
           />
@@ -56,8 +56,8 @@ const GoUp = () => {
             width="43"
             height="43"
             transform="rotate(-90 0.5 43.5)"
-            stroke="#3A3A3A"
-            strokeOpacity="0.8"
+            stroke="white"
+            strokeOpacity="0.6"
           />
         </svg>
       </GoUpButton>

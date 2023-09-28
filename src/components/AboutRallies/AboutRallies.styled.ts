@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const RalliesSection = styled.section`
   margin-top: 40px;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     margin: 60px 110px;

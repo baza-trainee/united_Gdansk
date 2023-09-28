@@ -1,22 +1,22 @@
 {
-  "headerButton": ["O nas", "Działalność", "Galeria", "Kontaktu"],
+  "headerButton": ["O nas", "Działalność", "Galeria", "Kontakt"],
   "heroSection": {
     "title": "Zjednoczony. Gdańsk.",
-    "paragraph": "Razem pokonajmy Rosję."
+    "paragraph": "Razem pokonamy rosję."
   },
   "title": "Zjednoczony. Gdańsk.",
   "about": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku, aby skupiać ludzi, których łączy wspólna idea i wspólnie rozmawiają o Ukrainie! O wszystkich naszych wydarzeniach informujemy na portalach społecznościowych, więc subskrybuj i bądź na bieżąco! Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu.",
   "nets": {
-    "title": "Siatka",
-    "text": "Kolejnym obszarem działalności naszego zespołu jest wolontariat. Od lutego 2023 roku nasz zespół organizuje zajęcia z tkania siatek maskujących dla Sił Zbrojnych Ukrainy. I tak właśnie jest w przypadku, gdy nazwa naszej organizacji idealnie wpasowuje się w klimat każdej sesji tkackiej – na siatkach można poczuć prawdziwą jedność dla wspólnego celu. Nasz zespół jest dumny, że może pomóc tym, którzy ryzykują życie dla naszego pokoju i bezpieczeństwa. Jesteśmy głęboko wdzięczni wszystkim, którzy dołączyli do nas w tej szlachetnej sprawie, pomagając uczynić świat choć trochę bezpieczniejszym dla nas wszystkich."
+    "title": "Plecenie sieci",
+    "text": "Jedną z działań naszego zespołu jest wolontariat. Od lutego 2023 roku nasz zespół organizuje sesje tworzenia maskujących siatek dla Sił Zbrojnych Ukrainy. To dokładnie taki przypadek, gdy nazwa naszej organizacji idealnie pasuje do atmosfery każdej sesji tworzenia - na siatkach czuć prawdziwe jedność dla wspólnego celu. Nasz zespół jest dumny z możliwości pomagania tym, którzy ryzykują swoim życiem dla naszego spokoju i bezpieczeństwa. Serdecznie dziękujemy wszystkim, którzy dołączyli do nas w tej szlachetnej sprawie, pomagając uczynić świat nieco bezpieczniejszym dla nas wszystkich."
   },
   "aboutUs": {
     "title": "O nas",
-    "text": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku, aby skupiać ludzi, których łączy wspólna idea i wspólnie rozmawiają o Ukrainie! O wszystkich naszych wydarzeniach informujemy na portalach społecznościowych, więc subskrybuj i bądź na bieżąco! Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu."
+    "text": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk, który powstał w polskim mieście Gdańsk, aby gromadzić ludzi zjednoczonych wspólną ideą i razem rozmawiać o Ukrainie! O wszystkich naszych działaniach informujemy w mediach społecznościowych, więc subskrybujcie nas i śledźcie aktualizacje! Nasza misja polega na jednoczeniu ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu."
   },
   "aboutRollies": {
-    "title": "O wiecu",
-    "text": "Od sierpnia 2022 roku będziemy organizować wiece na rzecz Ukrainy, a także rozpowszechniać informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze wiece stały się miejscem, w którym ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom konfliktu. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzeniach na Ukrainie i wspierać ją na drodze do pokoju i wolności."
+    "title": "Pro manifestacii",
+    "text": "Od sierpnia 2022 roku organizujemy manifestacje wsparcia dla Ukrainy oraz rozpowszechniamy informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze manifestacje stały się miejscem, gdzie ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom konfliktu. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzeniach na Ukrainie i wspierać ją w dążeniu do pokoju i wolności."
   },
   "footer": {
     "titleMenu": "O nas",
@@ -25,19 +25,19 @@
     "titleContact": "Zjednoczeni Gdańsk",
     "address": "m. Gdańsk",
     "email": "e-mail: zjednoczeni.gdansk@gmail.com",
-    "titleSocial": "My w mediach",
+    "titleSocial": "Sieci społecznościowe",
     "developer": "Developer Baza Trainee Ukraine 2023 Zjegnoczeni_Gdansk © Wszystkie prawa zastrzeżone"
   },
   "aboutGallery": {
     "title": "Galeria"
   },
   "donation": {
-    "title": "Darowizny",
-    "text": "Każda darowizna jest ważna i przybliża nasze Zwycięstwo. Niezależnie od tego, czy jest to niewielki, czy duży wkład, każda darowizna ma znaczenie. To jest nasz wspólny cel i wspólnie go osiągniemy. Dziękuję za Twoje wsparcie"
+    "title": "Wpłaty",
+    "text": "Każda pomoc jest ważna i zbliża naszą Zwycięstwo. Bez względu na to, czy to mały wkład czy duży udział, każda pomoc czyni różnicę. To nasz wspólny cel, i razem go osiągniemy. Dziękujemy za wasze wsparcie."
   },
   "assistance": {
-    "title": "Pomoc SZU",
-    "text": "Jak mówi współczesny ukraiński poeta Serhij Żadan, zwracamy się do Was, drodzy bracia i siostry! Ojciec najbliższego przyjaciela naszej Oleny służy obecnie w 46. Batalionie Powietrznodesantowo-Szturmowym Sił Zbrojnych Ukrainy, a teraz wraz z towarzyszami znajduje się na pierwszej linii frontu, w kierunku Bachmuta. Wszyscy rozumiemy, że sytuacja jest teraz bardzo trudna i ci goście naprawdę potrzebują naszej pomocy. Jego zespół potrzebuje pomocy, konieczny jest zakup kamery termowizyjnej. Zbiórka jest otwarta – jej celem jest zakup kamery termowizyjnej. Część środków została już zebrana, ale potrzebujemy Waszej pomocy! Planujemy zamówić kamerę termowizyjną w Polsce. Będziemy wdzięczni za każdą wpłatę i udostępnienie. Raporty z naszych wydatków można znaleźć w naszych sieciach społecznościowych. Bardziej szczegółowe informacje na temat zbiórki znajdują się na stronie Oleńki, aby uratować i nie narazić rodziny jej przyjaciółki na niebezpieczeństwo."
+    "title": "Pomoc żołnierzam Ukrainy",
+    "text": "Jak mówi współczesny ukraiński poeta Serhij Żadan, zwracamy się do was, drodzy bracia i siostry! Ojciec najbliższej przyjaciółki naszej Olenki służy obecnie w 46. Batalionie Desantowo-Szturmowym Sił Zbrojnych Ukrainy i obecnie razem z kolegami przebywa na froncie, na kierunku bachmuckim. Wszyscy rozumiemy, że sytuacja tam jest teraz bardzo trudna, a ci chłopcy naprawdę potrzebują naszej pomocy. Ich brygada potrzebuje wsparcia, konieczne jest zakupienie termowizora. Uruchomiono zbiórkę funduszy - celem jest zakup termowizora. Część funduszy już zebrano, ale potrzebujemy waszej pomocy! Zamierzamy zamówić termowizor w Polsce. Będziemy wdzięczni za każdą dotację i udostępnienie informacji. Raporty z naszych wydatków można znaleźć na naszych profilach społecznościowych. Szczegółowe informacje o zbiórce znajdują się na stronie Olenki, aby nie narażać rodziny przyjaciółki na niebezpieczeństwo."
   },
-  "donationButton": "Darowizna"
+  "donationButton": "Wpłać"
 }
