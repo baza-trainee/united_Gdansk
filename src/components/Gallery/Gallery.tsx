@@ -16,12 +16,13 @@ import {
   GalleryTitle,
   GallerySection,
   EventTitle,
+  CloseButton,
   ImageWrapper,
 } from "./Gallery.styled";
 
 import { Content } from "@/types/contentType";
 import { Lang } from "@/types/langTypes";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type IGallery = {
   content: Content;
@@ -34,9 +35,20 @@ type IImages = {
 
 const Gallery = ({ content, lang }: IGallery) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [modalImages, setModalImages] = useState<IImages[] | null>(null);
+  const [modalImages, setModalImages] = useState<IImages[]>([]);
 
-  const screenWidth = window.innerWidth;
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <>
@@ -48,7 +60,7 @@ const Gallery = ({ content, lang }: IGallery) => {
             clickable: true,
           }}
           spaceBetween={20}
-          centeredSlides={screenWidth > 768 ? false : true}
+          centeredSlides={screenWidth > 570 ? false : true}
           breakpoints={{
             320: {
               slidesPerView: 1.4,
@@ -88,17 +100,42 @@ const Gallery = ({ content, lang }: IGallery) => {
               </SwiperSlide>
             ))}
           {modalIsOpen && (
-            <ImageGallery
-              showPlayButton={false}
-              showFullscreenButton={false}
-              items={modalImages}
-              renderLeftNav={(click, disabled) => {
-                return <SlideBtn click={click} disabled={disabled} left />;
-              }}
-              renderRightNav={(click, disabled) => {
-                return <SlideBtn click={click} disabled={disabled} position='right' right />;
-              }}
-            />
+            <>
+              <CloseButton onClick={() => setModalIsOpen((prev) => !prev)}>
+                <svg
+                  width="13"
+                  height="13"
+                  viewBox="0 0 13 13"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    clipRule="evenodd"
+                    d="M6.29104 7.4366L10.8564 12.002L12.2706 10.5878L7.71931 6.03644L12.0935 1.74834L10.6934 0.320141L6.30503 4.62216L1.90699 0.224121L0.492775 1.63833L4.87676 6.02232L0.227295 10.5803L1.62738 12.0085L6.29104 7.4366Z"
+                    fill="#3A3A3A"
+                  />
+                </svg>
+              </CloseButton>
+              <ImageGallery
+                showPlayButton={false}
+                showFullscreenButton={false}
+                items={modalImages}
+                renderLeftNav={(click, disabled) => {
+                  return <SlideBtn click={click} disabled={disabled} left />;
+                }}
+                renderRightNav={(click, disabled) => {
+                  return (
+                    <SlideBtn
+                      click={click}
+                      disabled={disabled}
+                      position="right"
+                      right
+                    />
+                  );
+                }}
+              />
+            </>
           )}
         </Swiper>
       </GallerySection>
