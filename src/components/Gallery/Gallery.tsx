@@ -35,7 +35,7 @@ type IImages = {
 
 const Gallery = ({ content, lang }: IGallery) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [modalImages, setModalImages] = useState<IImages[] | null>(null);
+  const [modalImages, setModalImages] = useState<IImages[]>([]);
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
