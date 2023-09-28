@@ -1,20 +1,20 @@
 import styled from '@emotion/styled';
 
 export const AssistanceSection = styled.section`
-  padding: 120px 0;
-  max-width: 1040px;
+  padding: 120px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 
-  @media (max-width: 1100px) {
-    justify-content: center;
-  }
-
-  @media (max-width: 970px) {
+  @media (max-width: 1200px) {
+    padding: 120px 60px;
     display: block;
     position: relative;
+  }
+
+  @media (max-width: 768px) {
+    padding: 40px 20px;
   }
 `;
 
@@ -24,62 +24,20 @@ export const AssistanceLeft = styled.div`
   align-items: center;
 `;
 
-export const AssistanceImg = styled.div`
-  margin-bottom: 40px;
-
-  @media (max-width: 768px) {
-    margin: 0 auto 60px;
-  }
-
-  @media (max-width: 320px) {
-    margin: 0 auto 36px;
-  }
-`;
-
 export const AssistanceImage = styled.img`
   width: 500px;
   height: 500px;
+  margin-bottom: 40px;
 
-  @media (max-width: 1100px) {
-    width: 400px;
-    height: 400px;
-    margin-right: 20px;
-  }
-
-  @media (max-width: 970px) {
-    max-width: 548px;
+  @media (max-width: 1200px) {
     width: 100%;
-    height: 548px;
-    margin-right: 0;
-  }
-
-  @media (max-width: 600px) {
-    width: 450px;
-    height: 450px;
-  }
-
-  @media (max-width: 500px) {
-    width: 350px;
-    height: 350px;
-  }
-
-  @media (max-width: 370px) {
-    width: 320px;
-    height: 320px;
+    height: 100%;
   }
 `;
 
 export const AssistanceAside = styled.div`
   @media (max-width: 768px) {
-    padding: 0 110px;
-  }
-
-  @media (max-width: 650px) {
-    padding: 0 54px;
-  }
-
-  @media (max-width: 320px) {
-    padding: 0 54px;
+    margin-bottom: 46px;
   }
 `;
 
@@ -95,10 +53,12 @@ export const AssistanceTitle = styled.h2`
   }
 
   @media (max-width: 768px) {
+    text-align: left;
     margin-bottom: 16px;
   }
 
   @media (max-width: 320px) {
+    width: 150px;
     margin-bottom: 12px;
   }
 `;
@@ -111,25 +71,14 @@ export const AssistanceText = styled.p`
   text-align: justify;
   color: #3a3a3a;
 
-  @media (max-width: 1000px) {
-    max-width: 400px;
+  @media (max-width: 1200px) {
     width: 100%;
-  }
-
-  @media (max-width: 970px) {
-    max-width: 548px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 320px) {
-    width: 212px;
   }
 `;
 
 export const ButtonPosition = styled.div`
-  @media (max-width: 970px) {
+  @media (max-width: 1200px) {
     position: absolute;
-    bottom: 34px;
+    bottom: 0px;
   }
 `;

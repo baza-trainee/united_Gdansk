@@ -1,7 +1,6 @@
 import {
   AssistanceSection,
   AssistanceLeft,
-  AssistanceImg,
   AssistanceImage,
   AssistanceAside,
   AssistanceTitle,
@@ -16,12 +15,10 @@ const Assistance = ({ content }: { content: Content }) => {
   return (
     <AssistanceSection>
       <AssistanceLeft>
-        <AssistanceImg>
-          <AssistanceImage
-            src="./images/gallery/helpmilitary.jpg"
-            alt="military image"
-          />
-        </AssistanceImg>
+        <AssistanceImage
+          src="./images/gallery/helpmilitary.jpg"
+          alt="military image"
+        />
         <ButtonPosition>
           <Button
             buttonTitle={content?.donationButton}
