@@ -31,6 +31,20 @@ export const EventTitleWrapper = styled.div`
   padding-top: 14px;
   padding-bottom: 14px;
 `;
+export const CloseButton = styled.button`
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 24px;
+  height: 24px;
+  padding: 7px;
+  position: absolute;
+  right: 0;
+  z-index: 30;
+  cursor: pointer;
+`;
 
 export const ImageWrapper = styled.div`
   position: relative;
