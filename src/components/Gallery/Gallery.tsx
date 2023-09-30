@@ -1,4 +1,4 @@
-import { Pagination, A11y, Navigation } from "swiper/modules";
+import { Pagination, A11y, Navigation,  } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import SlideBtn from "../SlideBtn/SlideBtn";
@@ -72,12 +72,14 @@ const Gallery = ({ content, lang }: IGallery) => {
               slidesPerView: 3,
             },
           }}
-          style={{ paddingTop: "12px", paddingBottom: "35px" }}
+          loop={true}
+          style={{ paddingTop: "40px", paddingBottom: "35px" }}
           onSlideChange={() => console.log("slide change")}
         >
           {!modalIsOpen &&
             events.map((image) => (
               <SwiperSlide
+                className={`${image.class}`}
                 key={image.image}
                 style={{ cursor: "pointer" }}
                 onClick={() => {
@@ -99,46 +101,46 @@ const Gallery = ({ content, lang }: IGallery) => {
                 </ImageWrapper>
               </SwiperSlide>
             ))}
-          {modalIsOpen && (
-            <>
-              <CloseButton onClick={() => setModalIsOpen((prev) => !prev)}>
-                <svg
-                  width="13"
-                  height="13"
-                  viewBox="0 0 13 13"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M6.29104 7.4366L10.8564 12.002L12.2706 10.5878L7.71931 6.03644L12.0935 1.74834L10.6934 0.320141L6.30503 4.62216L1.90699 0.224121L0.492775 1.63833L4.87676 6.02232L0.227295 10.5803L1.62738 12.0085L6.29104 7.4366Z"
-                    fill="#3A3A3A"
-                  />
-                </svg>
-              </CloseButton>
-              <ImageGallery
-                showPlayButton={false}
-                showFullscreenButton={false}
-                items={modalImages}
-                renderLeftNav={(click, disabled) => {
-                  return <SlideBtn click={click} disabled={disabled} left />;
-                }}
-                renderRightNav={(click, disabled) => {
-                  return (
-                    <SlideBtn
-                      click={click}
-                      disabled={disabled}
-                      position="right"
-                      right
-                    />
-                  );
-                }}
-              />
-            </>
-          )}
         </Swiper>
       </GallerySection>
+      {modalIsOpen && (
+        <>
+          <CloseButton onClick={() => setModalIsOpen((prev) => !prev)}>
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M6.29104 7.4366L10.8564 12.002L12.2706 10.5878L7.71931 6.03644L12.0935 1.74834L10.6934 0.320141L6.30503 4.62216L1.90699 0.224121L0.492775 1.63833L4.87676 6.02232L0.227295 10.5803L1.62738 12.0085L6.29104 7.4366Z"
+                fill="#3A3A3A"
+              />
+            </svg>
+          </CloseButton>
+          <ImageGallery
+            showPlayButton={false}
+            showFullscreenButton={false}
+            items={modalImages}
+            renderLeftNav={(click, disabled) => {
+              return <SlideBtn click={click} disabled={disabled} left />;
+            }}
+            renderRightNav={(click, disabled) => {
+              return (
+                <SlideBtn
+                  click={click}
+                  disabled={disabled}
+                  position="right"
+                  right
+                />
+              );
+            }}
+          />
+        </>
+      )}
     </>
   );
 };
