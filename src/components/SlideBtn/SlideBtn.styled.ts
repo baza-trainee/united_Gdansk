@@ -5,10 +5,11 @@ export const SlideButton = styled.button<{
   left: boolean | undefined;
   right: boolean | undefined;
 }>`
-  border: none;
+  border: 1px solid #eaeaea;
   position: absolute;
   top: 50%;
   z-index: 10;
+  padding: 5px;
   left: ${(props) => (props.left ? "0" : "")};
   right: ${(props) => (props.right ? "0" : "")};
   background-color: transparent;

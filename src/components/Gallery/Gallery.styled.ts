@@ -16,8 +16,7 @@ export const GallerySection = styled.section<{ bg: boolean }>`
     padding-right: 35px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 60px 20px;
   }
 `;
 export const EventTitle = styled.p`
@@ -34,15 +33,16 @@ export const EventTitleWrapper = styled.div`
 export const CloseButton = styled.button`
   background-color: transparent;
   display: flex;
+  border: 1px solid #eaeaea;
+  position: fixed;
+  z-index: 200;
+  bottom: 90%;
+  right: 30px;
   justify-content: center;
   align-items: center;
-  border: none;
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   padding: 7px;
-  position: absolute;
-  right: 0;
-  z-index: 30;
   cursor: pointer;
 `;
 
@@ -64,5 +64,10 @@ export const ImageWrapper = styled.div`
       rgba(45, 44, 44, 0.92) 100%
     );
     pointer-events: none;
+  }
+  transition: transform 500ms linear, transform 500ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
   }
 `;

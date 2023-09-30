@@ -11,6 +11,7 @@
   margin: 0 auto;
   text-align: center;
   padding: 0;
+  transition: transform;
 }
 
 @font-face {
@@ -105,4 +106,40 @@ img {
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #3a3a3a !important;
+}
+.first {
+  transition: padding-right 500ms linear, transform 500ms ease-in-out;
+}
+
+.first:hover {
+  padding-right: 20px;
+}
+.second {
+  transition: all 500ms linear, transform 500ms ease-in-out;
+}
+
+.second:hover {
+  padding-right: 20px;
+  margin-left: 20px;
+}
+
+.third {
+  transition: padding 500ms linear, transform 500ms ease-in-out;
+}
+
+.third:hover {
+  padding-left: 20px;
+}
+.image-gallery-content {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 100;
+  padding-top: 20px;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  max-height: calc(100vh - 128px);
 }
