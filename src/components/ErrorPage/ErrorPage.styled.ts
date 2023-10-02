@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const ErrorPageSection = styled.div`
+export const ErrorSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +8,7 @@ export const ErrorPageSection = styled.div`
   min-height: 100vh; 
   `;
 
-export const errorPageTitle = styled.div`
+export const ErrorTitle = styled.div`
 color: black;
 font-size: 32px;
 font-family: Roboto;
@@ -20,7 +20,7 @@ word-wrap: break-word
   }
 `;
 
-export const errorPage404 = styled.div`
+export const Error404 = styled.div`
 color: black;
 font-size: 128px;
 font-family: Roboto;
@@ -36,7 +36,7 @@ word-wrap: break-word;
     font-size: 64px; 
     letter-spacing: 5.76px; 
   }
-`
+`;
 
 export const ImgBackground = styled.div`
 background: rgba(241, 241, 241, 0.62) url('./images/hero/firstSlide.jpg'); 
@@ -48,7 +48,8 @@ position: fixed;
 top: 0;
 left: 0;
 z-index: -1;
-`
+`;
+
 export const ButtonError = styled.div`
 display: flex;
 width: 232px;
@@ -61,4 +62,4 @@ gap: 10px;
 @media (max-width: 480px) {
 width: 172px;
   }
-`
+`;

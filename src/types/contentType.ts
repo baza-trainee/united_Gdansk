@@ -37,4 +37,9 @@ export type Content = {
     title: string;
     text: string;
   };
+  errorPage: {
+    errorPageBtn: string;
+    errorPageTitle: string;
+    errorPage404: string;
+  }
 };
