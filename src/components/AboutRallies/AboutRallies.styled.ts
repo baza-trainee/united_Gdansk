@@ -23,8 +23,8 @@ export const RalliesText = styled.p`
   font-size: 18px;
   font-weight: 400;
   margin-top: 12px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
   line-height: 1.5;
   text-align: justify;
   // width: 288px;

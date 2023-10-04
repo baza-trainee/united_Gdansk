@@ -37,13 +37,22 @@ export const CloseButton = styled.button`
   position: fixed;
   z-index: 200;
   bottom: 90%;
-  right: 30px;
+  top: 12px;
+  right: 12px;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  padding: 7px;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
   cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    top: 24px;
+    right: 24px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
