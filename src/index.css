@@ -92,7 +92,13 @@ img {
 #swiper-wrapper-237649d56a39b248 {
   left: -50px;
 }
-
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff;
@@ -131,7 +137,7 @@ img {
   padding-left: 20px;
 }
 .image-gallery-content {
-  position: fixed;
+  position: fixed !important;
   background-color: white;
   width: 100%;
   height: 100%;
