@@ -104,7 +104,7 @@ img {
   color: #fff;
 }
 .swiper-pagination.swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 15px !important;
 }
 .swiper-pagination-bullet {
   background-color: #d9d9d9 !important;
@@ -113,29 +113,7 @@ img {
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #3a3a3a !important;
 }
-.first {
-  transition: padding-right 500ms linear, transform 500ms ease-in-out;
-}
 
-.first:hover {
-  padding-right: 20px;
-}
-.second {
-  transition: all 500ms linear, transform 500ms ease-in-out;
-}
-
-.second:hover {
-  padding-right: 20px;
-  margin-left: 20px;
-}
-
-.third {
-  transition: padding 500ms linear, transform 500ms ease-in-out;
-}
-
-.third:hover {
-  padding-left: 20px;
-}
 .image-gallery-content {
   position: fixed !important;
   background-color: white;
@@ -151,7 +129,7 @@ img {
   padding-left: 36px;
   padding-right: 36px;
   padding-bottom: 24px;
-  max-height: calc(100vh - 150px);
+  max-height: calc(100vh - 150px) !important;
   @media screen and (min-width: 768px) {
     padding-top: 160px;
     padding-left: 54px;
