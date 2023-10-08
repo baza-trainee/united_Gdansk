@@ -15,12 +15,14 @@ export const GallerySection = styled.section<{ bg: boolean }>`
     padding-left: 35px;
     padding-right: 35px;
   }
-  @media screen and (min-width: 1280px) {
-    padding: 60px 20px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   padding: 60px 20px;
+  // }
 `;
 export const EventTitle = styled.p`
   color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
   position: absolute;
   bottom: 12px;
   z-index: 20;

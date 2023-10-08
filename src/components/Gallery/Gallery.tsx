@@ -1,4 +1,4 @@
-import { Pagination, A11y, Navigation,  } from "swiper/modules";
+import { Pagination, A11y, Navigation, Zoom } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import SlideBtn from "../SlideBtn/SlideBtn";
@@ -8,6 +8,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 import "swiper/css";
+import "swiper/css/zoom";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
@@ -55,10 +56,11 @@ const Gallery = ({ content, lang }: IGallery) => {
       <GallerySection id="gallery" bg={modalIsOpen}>
         <GalleryTitle>{content.aboutGallery.title}</GalleryTitle>
         <Swiper
-          modules={[Navigation, Pagination, A11y]}
+          modules={[Navigation, Pagination, A11y, Zoom]}
           pagination={{
             clickable: true,
           }}
+          zoom={true}
           spaceBetween={20}
           centeredSlides={screenWidth > 570 ? false : true}
           breakpoints={{
@@ -72,9 +74,7 @@ const Gallery = ({ content, lang }: IGallery) => {
               slidesPerView: 3,
             },
           }}
-          loop={true}
           style={{ paddingTop: "40px", paddingBottom: "35px" }}
-          onSlideChange={() => console.log("slide change")}
         >
           {!modalIsOpen &&
             events.map((image) => (
