@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { GoUpButton } from "./GoUp";
+import { GoUpButton } from "./GoUp.styled";
+import upBtn from '../../../public/btns_scroll.svg'
 const GoUp = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -29,7 +30,7 @@ const GoUp = () => {
   return (
     showButton && (
       <GoUpButton onClick={scrollToTop}>
-        <svg
+        {/* <svg
           width="44"
           height="44"
           viewBox="0 0 44 44"
@@ -59,7 +60,8 @@ const GoUp = () => {
             stroke="white"
             strokeOpacity="0.6"
           />
-        </svg>
+        </svg> */}
+        <img src={upBtn} alt="" />
       </GoUpButton>
     )
   );
