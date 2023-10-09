@@ -1,23 +1,10 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const DonateBtnsSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
-
-  @media screen and (min-width: 768px) {
-    gap: 48px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    gap: 68px;
-  }
-`;
-
-export const BlickBtnWrapper = styled.div`
-  
-  
+  gap: 20px;
 `;
 
 export const BlickSvg = styled.svg`
@@ -29,12 +16,12 @@ export const BlickSvg = styled.svg`
     width: 60px;
     height: 30px;
   }
-
 `;
 
 export const BlickBtn = styled.button`
   width: 62px;
   height: 44px;
+  position: relative;
   background-color: #000000;
   border-radius: 5px;
 
@@ -42,11 +29,6 @@ export const BlickBtn = styled.button`
     width: 86px;
     height: 60px;
   }
-
-`;
-
-export const DonateBtnWrapper = styled.div`
-
 `;
 
 export const Btn = styled.button`
@@ -68,4 +50,9 @@ export const Btn = styled.button`
   @media (max-width: 350px) {
     width: 212px;
   }
+`;
+export const BlickName = styled.p`
+  display: flex;
+  gap: 2px;
+  flex-direction: column;
 `;

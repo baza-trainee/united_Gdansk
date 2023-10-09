@@ -1,21 +1,20 @@
 import {
   DonateBtnsSection,
-  BlickBtnWrapper,
   BlickBtn,
   BlickSvg,
-  DonateBtnWrapper,
-  Btn
-} from "./Button.styled"
+  Btn,
+  BlickName,
+} from "./Button.styled";
 
 type IPropsBtn = {
-    buttonTitle: string;
-    link: string;
-}
+  buttonTitle: string;
+  link: string;
+};
 
-const Button = ({ buttonTitle, link } : IPropsBtn) => {
+const Button = ({ buttonTitle, link }: IPropsBtn) => {
   return (
     <DonateBtnsSection>
-      <BlickBtnWrapper>
+      <div>
         <BlickBtn type="button">
           <a href="#">
             <BlickSvg>
@@ -25,20 +24,46 @@ const Button = ({ buttonTitle, link } : IPropsBtn) => {
                 </symbol>
               </use>
             </BlickSvg>
+            <svg
+              width="10"
+              height="10"
+              style={{ top: "9px", position: "absolute", left: "22px" }}
+              viewBox="0 0 10 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9.36611 5.10146C9.38229 2.58343 7.37519 0.528901 4.88314 0.512552C2.39108 0.496203 0.357756 2.52422 0.341576 5.04226C0.325395 7.56029 2.33249 9.61482 4.82454 9.63116C7.3166 9.64751 9.34993 7.6195 9.36611 5.10146Z"
+                fill="url(#paint0_linear_2914_1806)"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_2914_1806"
+                  x1="1.63847"
+                  y1="8.26977"
+                  x2="8.13499"
+                  y2="1.9322"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stop-color="#E52F08" />
+                  <stop offset="1" stop-color="#E94F96" />
+                </linearGradient>
+              </defs>
+            </svg>
           </a>
-
         </BlickBtn>
-      </BlickBtnWrapper>
+        <BlickName>
+          Phone:880224704<span> Name:Maksym Tishchenko</span>
+        </BlickName>
+      </div>
 
-      <DonateBtnWrapper>
+      <div>
         <Btn type="button">
           <a href={link}>{buttonTitle}</a>
-          
         </Btn>
-      </DonateBtnWrapper>  
+      </div>
     </DonateBtnsSection>
   );
 };
 
 export default Button;
-
