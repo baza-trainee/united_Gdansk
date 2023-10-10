@@ -9,7 +9,7 @@ import { Content } from "../../types/contentType";
 
 const Nets = ({ content }: { content: Content }) => {
   return (
-    <NetsSection>
+    <NetsSection id="activities">
       <NetsPicWrapper>
         <picture>
           <source

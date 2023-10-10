@@ -5,25 +5,55 @@ export const GalleryTitle = styled.h2`
   font-size: 32px;
   font-weight: 400;
 `;
-export const GallerySection = styled.section`
-  background-color: #0059b2;
+export const GallerySection = styled.section<{ bg: boolean }>`
+  background-color: ${(props) => (props.bg ? "#0059b2" : "#0059b2")};
   padding-top: 12px;
   position: relative;
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 768px) {
     padding-left: 35px;
     padding-right: 35px;
   }
+
 `;
 export const EventTitle = styled.p`
   color: #fff;
+  margin-left: 15px;
+  margin-right: 15px;
   position: absolute;
   bottom: 12px;
   z-index: 20;
+  text-align: center;
+
+
 `;
 export const EventTitleWrapper = styled.div`
   background-color: rgba(241, 239, 239, 0.7);
   padding-top: 14px;
   padding-bottom: 14px;
+`;
+export const CloseButton = styled.button`
+  background-color: transparent;
+  display: flex;
+  border: 1px solid #eaeaea;
+  position: fixed;
+  z-index: 200;
+  bottom: 90%;
+  top: 12px;
+  right: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    width: 44px;
+    height: 44px;
+    padding: 8px;
+    top: 24px;
+    right: 24px;
+  }
 `;
 
 export const ImageWrapper = styled.div`
@@ -44,5 +74,10 @@ export const ImageWrapper = styled.div`
       rgba(45, 44, 44, 0.92) 100%
     );
     pointer-events: none;
+  }
+  transition: transform 500ms linear, transform 500ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
   }
 `;

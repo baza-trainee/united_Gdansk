@@ -9,7 +9,7 @@ import { Content } from '../../types/contentType';
 
 const AboutUs = ({ content }: { content: Content }) => {
     return (
-        <AboutUsSection>
+        <AboutUsSection id="aboutUs">
             <ImageAboutUsWrapper>
                 <picture>
                     <source

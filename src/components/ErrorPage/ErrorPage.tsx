@@ -1,10 +1,14 @@
-import Header from "../Header/Header.tsx";
-import Footer from "../Footer/Footer.tsx";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import Button from '../Button/Button';
 import { ErrorSection, ImgBackground, ErrorTitle, Error404, ButtonError } from './ErrorPage.styled';
 import { Content } from '../../types/contentType';
+import {Lang} from '../../types/langTypes'; 
+import { loadData } from "@/helpers/dataLoader";
+import {useEffect, useState} from 'react'; 
+import useLanguage from "@/hooks/useLanguage";
 
-const ErrorPage = ({content}: {content: Content}) => {
+const ErrorPage = () => {
 
     const [lang, setLang] = useLanguage();
     const [content, setContent] = useState<Content | null>(null);
@@ -22,6 +26,7 @@ const ErrorPage = ({content}: {content: Content}) => {
     };
 
     return (
+      content && (
         <>
         <Header
             languageChange={languageChange}
@@ -32,15 +37,14 @@ const ErrorPage = ({content}: {content: Content}) => {
         <ErrorSection>
 
             <ImgBackground
-            src="./images/hero/firstSlide.jpg" alt="error background image" >
-            </ImgBackground>
+            src="./images/hero/firstSlide.jpg" alt="error background image" />
 
             <ErrorTitle> {content?.errorPage.errorPageTitle} </ErrorTitle> 
 
             <ButtonError>
             <Button 
                 buttonTitle={content?.errorPage.errorPageBtn}
-                link={#} >
+                link={'#'} >
             </Button>
             </ButtonError>
 
@@ -50,6 +54,7 @@ const ErrorPage = ({content}: {content: Content}) => {
         
         <Footer content={content} />
         </>
+    )
     )
 }
 

@@ -19,7 +19,6 @@ export const HeaderBar = styled.header`
 export const MenuLeftSide = styled.div`
   display: flex;
   align-items: center;
-
   grid-template-columns: repeat(2, auto);
   justify-content: space-between;
 `;
@@ -76,6 +75,7 @@ export const MenuButton = styled.button`
       height: 2px;
       background-color: black;
     }
+
     &::before {
       top: 0;
     }
@@ -101,12 +101,23 @@ export const MenuButton = styled.button`
         transform: rotate(45deg);
       }
     }
+
+    &.fixed {
+      position: fixed;
+      top: 37px;
+      right: 30px;
+
+      @media (max-width: 768px) {
+        right: 20px;
+      }
+    }
   }
 `;
 
 export const MenuList = styled.nav`
   min-width: 100%;
   z-index: 10;
+
   @media (max-width: 1279px) {
     padding: 76px 28px 30px 15px;
     position: fixed;
@@ -125,7 +136,6 @@ export const MenuList = styled.nav`
       background-color: #fff;
     }
   }
-
   & ul {
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +149,6 @@ export const MenuList = styled.nav`
       align-items: flex-start;
       row-gap: 24px;
     }
-
     & li {
       color: #3a3a3a;
       font-family: Roboto;
@@ -147,9 +156,9 @@ export const MenuList = styled.nav`
       font-weight: 500;
       line-height: 24px;
       letter-spacing: 0.5px;
-
+      overflow-y: hidden;
       &:hover {
-        color: #ffffff;
+        color: #0059b2;
       }
       &:active {
         color: #0059b2;
