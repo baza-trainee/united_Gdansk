@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const FooterContainer = styled.div`
-  padding: 16px;
+  margin: 16px;
   background-color: #0059b2;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -10,11 +10,18 @@ export const FooterContainer = styled.div`
   display: block;
 
   @media (min-width: 768px) and (max-width: 1279px) {
-    padding: 24px 86px 12px 86px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: 1280px) {
-    padding: 28px 110px 12px 110px;
+    margin-top: 28px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+/* padding: 28px 110px 12px 110px; */
   }
 `;
 

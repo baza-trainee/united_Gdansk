@@ -43,47 +43,47 @@ const Footer: React.FC<FooterProps> = ({ content: {footer} }) => {
           <ListContact>
             <ul>
               <li>{footer.address}</li>
-              <li>{footer.email}</li>
+              <li>
+                <a href="mailto:zjednoczeni.gdansk@gmail.com">{footer.email}</a>
+              </li>
             </ul>
           </ListContact>
         </BlockContact>
         <BlockSocial>
           <TitleSocial>{footer.titleSocial}</TitleSocial>
           <ListSocial>
-            
-                <a href="https://t.me/zjednoczeni_gdansk" target="_blank">
-                  <img
-                    src="./images/social/telegram_inact.svg"
-                    alt="Telegram"
-                    width="44"
-                    height="44"
-                  />
-                </a>
-             
-                <a
-                  href="https://www.facebook.com/people/%D0%9E%D0%B1%D1%94%D0%B4%D0%BD%D0%B0%D0%BD%D1%96-Zjednoczeni/100085363522655/"
-                  target="_blank"
-                >
-                  <img
-                    src="./images/social/facebook_inact.svg"
-                    alt="Facebook"
-                    width="44"
-                    height="44"
-                  />
-                </a>
-             
-                <a
-                  href="https://www.instagram.com/zjednoczeni_gdansk/?igshid=YmMyMTA2M2Y%3D"
-                  target="_blank"
-                >
-                  <img
-                    src="./images/social/insta_inact.svg"
-                    alt="Instagram"
-                    width="44"
-                    height="44"
-                  />
-                </a>
-              
+            <a href="https://t.me/zjednoczeni_gdansk" target="_blank">
+              <img
+                src="./images/social/telegram_inact.svg"
+                alt="Telegram"
+                width="44"
+                height="44"
+              />
+            </a>
+
+            <a
+              href="https://www.facebook.com/people/%D0%9E%D0%B1%D1%94%D0%B4%D0%BD%D0%B0%D0%BD%D1%96-Zjednoczeni/100085363522655/"
+              target="_blank"
+            >
+              <img
+                src="./images/social/facebook_inact.svg"
+                alt="Facebook"
+                width="44"
+                height="44"
+              />
+            </a>
+
+            <a
+              href="https://www.instagram.com/zjednoczeni_gdansk/?igshid=YmMyMTA2M2Y%3D"
+              target="_blank"
+            >
+              <img
+                src="./images/social/insta_inact.svg"
+                alt="Instagram"
+                width="44"
+                height="44"
+              />
+            </a>
           </ListSocial>
         </BlockSocial>
       </FooterBlocks>

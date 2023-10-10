@@ -43,7 +43,7 @@ function App() {
         <AboutUs content={content}/>
         <Nets content={content} />
         <Donation content={content} />
-        <AboutRallies content={content} /
+        <AboutRallies content={content} />
         <Gallery
           content={content}
           lang={lang}
