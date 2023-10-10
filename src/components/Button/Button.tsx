@@ -45,8 +45,8 @@ const Button = ({ buttonTitle, link }: IPropsBtn) => {
                   y2="1.9322"
                   gradientUnits="userSpaceOnUse"
                 >
-                  <stop stop-color="#E52F08" />
-                  <stop offset="1" stop-color="#E94F96" />
+                  <stop stopColor="#E52F08" />
+                  <stop offset="1" stopColor="#E94F96" />
                 </linearGradient>
               </defs>
             </svg>

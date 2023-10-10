@@ -62,7 +62,7 @@ const Gallery = ({ content, lang }: IGallery) => {
           }}
           zoom={true}
           spaceBetween={20}
-          centeredSlides={screenWidth > 570 ? false : true}
+          centeredSlides={screenWidth >= 570 ? false : true}
           breakpoints={{
             320: {
               slidesPerView: 1.4,
