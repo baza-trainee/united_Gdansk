@@ -89,7 +89,7 @@ export const events = [
     image: "./images/gallery/cleanForrest.jpg",
     imageDouble: "./images/gallery/cleanForrest2x.jpg",
     title: "29.11.2022 Прибирання лісу",
-    titlePL: "29.11.202 Sprzątanie lasu",
+    titlePL: "29.11.2022 Sprzątanie lasu",
     class: "third",
     images: [
       {

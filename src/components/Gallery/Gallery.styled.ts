@@ -9,23 +9,22 @@ export const GallerySection = styled.section<{ bg: boolean }>`
   background-color: ${(props) => (props.bg ? "#0059b2" : "#0059b2")};
   padding-top: 12px;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
   @media screen and (min-width: 768px) {
     padding-left: 35px;
     padding-right: 35px;
   }
-  // @media screen and (min-width: 1280px) {
-  //   padding: 60px 20px;
-  // }
+
 `;
 export const EventTitle = styled.p`
   color: #fff;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
   position: absolute;
   bottom: 12px;
   z-index: 20;
+  text-align: center;
+
+
 `;
 export const EventTitleWrapper = styled.div`
   background-color: rgba(241, 239, 239, 0.7);
