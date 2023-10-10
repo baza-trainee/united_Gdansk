@@ -4,11 +4,12 @@ export const CarouselContainer = styled.section`
   position: relative;
   .swiper-button-prev,
   .swiper-button-next {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.6);
     color: #000000;
 
     width: 44px;
     height: 44px;
+
     @media (max-width: 500px) {
       width: 24px;
       height: 24px;
@@ -17,18 +18,37 @@ export const CarouselContainer = styled.section`
         font-size: 14px;
       }
     }
+
+    &:hover {
+      background: rgba(197, 197, 197, 0.4);
+    }
   }
 
   .swiper-button-prev {
     left: 60px;
+    @media (max-width: 1200px) {
+      left: 28px;
+    }
     @media (max-width: 500px) {
-      left: 10px;
+      display: none;
+    }
+
+    &:after {
+      font-size: 25px;
     }
   }
   .swiper-button-next {
     right: 60px;
+
+    @media (max-width: 1200px) {
+      right: 28px;
+    }
+
     @media (max-width: 500px) {
-      right: 10px;
+      display: none;
+    }
+    &:after {
+      font-size: 25px;
     }
   }
 
@@ -78,15 +98,18 @@ export const Slider = styled.div<{ url: string }>`
   h2 {
     font-size: 52px;
     padding: 0 30px;
-    @media (max-width: 320px) {
-      font-size: 36px;
+    font-weight: 700;
+
+    @media (max-width: 500px) {
+      font-size: 42px;
     }
   }
   p {
     font-size: 36px;
     padding: 0 35px;
-    @media (max-width: 320px) {
-      font-size: 18px;
+    font-weight: 400;
+    @media (max-width: 500px) {
+      font-size: 28px;
     }
   }
 `;
