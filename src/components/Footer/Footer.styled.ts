@@ -17,11 +17,7 @@ export const FooterContainer = styled.div`
   }
 
   @media (min-width: 1280px) {
-    padding-top: 28px;
-    padding-bottom: 12px;
-    padding-left: 110px;
-    padding-right: 110px;
-    /* padding: 28px 110px 12px 110px; */
+    padding: 28px 110px 12px 110px;
   }
 `;
 
@@ -53,8 +49,7 @@ export const Developer = styled.p`
   text-align: start;
   @media (max-width: 767px) {
     width: 300px;
-    /* text-align: center; */
-  }
+   }
 `;
 
 export const BlockMenu = styled.div`
@@ -65,12 +60,10 @@ export const BlockMenu = styled.div`
     margin-bottom: 24px;
   }
   @media (min-width: 768px) and (max-width: 1279px) {
-    /* margin-right: 64px; */
     align-items: start;
   }
 
   @media (min-width: 1280px) {
-    /* margin-right: 204px; */
     margin-bottom: 10px;
     align-items: start;
   }
@@ -88,10 +81,8 @@ export const BlockContact = styled.div`
   }
 
   @media (min-width: 1280px) {
-    /* margin-right: 204px; */
     align-items: start;
-    /* margin-bottom: 10px; */
-  }
+    }
 `;
 export const BlockSocial = styled.div`
   display: flex;
@@ -107,7 +98,6 @@ export const BlockSocial = styled.div`
 export const ListSocial = styled.div`
   display: flex;
   flex-direction: row;
-  /* justify-items: space-between; */
   gap: 12px;
   cursor: pointer;
   
@@ -125,7 +115,6 @@ export const TitleMenu = styled.h3`
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 18px;
-  /* text-align: start; */
   
   @media (min-width: 768px) {
     font-weight: 600;
@@ -137,8 +126,7 @@ export const TitleContact = styled.h3`
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 12px;
-  /* text-align: start; */
-  
+   
   @media (min-width: 768px) {
     font-weight: 600;
     margin-bottom: 12px;
@@ -169,7 +157,6 @@ export const ListMenu = styled.ul`
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    /* text-align: start; */
     padding-bottom: 8px;
   }
 
@@ -180,8 +167,7 @@ export const ListMenu = styled.ul`
 export const ListContact = styled.ul`
   display: flex;
   gap: 12px;
-  /* cursor: pointer; */
-  /* text-align: start; */
+
   li {
     font-family: Roboto;
     color: #fff;
