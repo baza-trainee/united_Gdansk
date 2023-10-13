@@ -1,8 +1,10 @@
 {
   "headerButton": ["O nas", "Działalność", "Galeria", "Kontakt"],
   "heroSection": {
+
     "title": "Zjednoczeni Gdańsk",
     "paragraph": "Razem pokonajmy rosję"
+
   },
   "title": "Zjednoczeni Gdańsk",
   "about": "Cześć! Jesteśmy inicjatywą publiczną Zjednoczeni Gdańsk/Об'єднані Ґданськ, która powstała w polskim mieście Gdańsku. Naszym celem jest zgromadzaenie ludzi, których łączy idea o silnej i niezależnej Ukrainie, żeby razem mówić i nagłaśniać tematy związane z wojną, którą rozpętała Rosja w naszym kraju! O wszystkich naszych wydarzeniach informujemy w naszych sieciach społecznościowych, zasubskrybój nas, żeby być na bieżąco.",
@@ -15,7 +17,9 @@
     "text": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku. Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu. Naszym celem jest zgromadzenie ludzi, których łączy idea o silnej i niezależnej Ukrainie, żeby razem mówić i nagłaśniać tematy związane z wojną, którą rozpętała Rosja w naszym kraju! O wszystkich naszych wydarzeniach informujemy w naszych sieciach społecznościowych, zasubskrybój nas, żeby być na bieżąco."
   },
   "aboutRollies": {
+
     "title": "O wiecach",
+
     "text": "Od sierpnia 2022 roku organizujemy wiece na rzecz Ukrainy, a także rozpowszechniamy informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze wiece stały się miejscem, w którym ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom wojny. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzenia na Ukrainie i wesprą ją na drodze do pokoju i wolności."
   },
   "footer": {
@@ -27,6 +31,7 @@
     "email": "e-mail: zjednoczeni.gdansk@gmail.com",
     "titleSocial": "My w mediach społecznościowych",
     "developer": "Developer Baza Trainee Ukraine 2023 Zjednoczeni_Gdańsk © Wszystkie prawa zastrzeżone"
+
   },
   "aboutGallery": {
     "title": "Galeria"

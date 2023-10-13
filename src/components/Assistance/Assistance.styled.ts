@@ -1,20 +1,21 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const AssistanceSection = styled.section`
-  padding: 120px 0;
-  max-width: 1040px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
-  @media (max-width: 1100px) {
+  @media screen and (min-width: 768px) {
+    margin: 60px 110px;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    flex-direction: column;
   }
-
-  @media (max-width: 970px) {
-    display: block;
-    position: relative;
+  @media screen and (min-width: 1280px) {
+    margin: 120px;
+    flex-direction: inherit;
+    align-items: flex-start;
+}
   }
 `;
 
@@ -24,112 +25,73 @@ export const AssistanceLeft = styled.div`
   align-items: center;
 `;
 
-export const AssistanceImg = styled.div`
-  margin-bottom: 40px;
-
-  @media (max-width: 768px) {
-    margin: 0 auto 60px;
-  }
-
-  @media (max-width: 320px) {
-    margin: 0 auto 36px;
-  }
-`;
-
 export const AssistanceImage = styled.img`
   width: 500px;
   height: 500px;
+  margin-bottom: 40px;
 
-  @media (max-width: 1100px) {
-    width: 400px;
-    height: 400px;
-    margin-right: 20px;
-  }
-
-  @media (max-width: 970px) {
-    max-width: 548px;
+  @media (max-width: 1200px) {
     width: 100%;
-    height: 548px;
-    margin-right: 0;
-  }
-
-  @media (max-width: 600px) {
-    width: 450px;
-    height: 450px;
-  }
-
-  @media (max-width: 500px) {
-    width: 350px;
-    height: 350px;
-  }
-
-  @media (max-width: 370px) {
-    width: 320px;
-    height: 320px;
+    height: 100%;
   }
 `;
 
 export const AssistanceAside = styled.div`
-  @media (max-width: 768px) {
-    padding: 0 110px;
-  }
+  margin-top: 36px;
 
-  @media (max-width: 650px) {
-    padding: 0 54px;
+  @media screen and (min-width: 768px) {
+    margin-top: 60px;
   }
-
-  @media (max-width: 320px) {
-    padding: 0 54px;
+  @media screen and (min-width: 1280px) {
+    margin-top: 0;
+    margin-left: 112px;
   }
 `;
 
-export const AssistanceTitle = styled.h2`
-  color: #000000;
-  font-size: 32px;
-  font-weight: 400;
-  text-align: left;
-  margin-bottom: 40px;
-
-  @media (max-width: 970px) {
-    text-align: center;
-  }
-
-  @media (max-width: 768px) {
-    margin-bottom: 16px;
-  }
-
-  @media (max-width: 320px) {
-    margin-bottom: 12px;
-  }
-`;
 export const AssistanceText = styled.p`
-  width: 428px;
   font-size: 18px;
   font-weight: 400;
-  line-height: 27px;
-  letter-spacing: 0em;
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-right: 16px;
+  line-height: 1.5;
   text-align: justify;
-  color: #3a3a3a;
 
-  @media (max-width: 1000px) {
-    max-width: 400px;
-    width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 548px;
+    margin-top: 16px;
+    margin-left: 0px;
   }
-
-  @media (max-width: 970px) {
-    max-width: 548px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 320px) {
-    width: 212px;
+  @media screen and (min-width: 1280px) {
+    width: 428px;
+    margin-top: 40px;
   }
 `;
 
 export const ButtonPosition = styled.div`
-  @media (max-width: 970px) {
-    position: absolute;
-    bottom: 34px;
+  margin-top: 24px;
+  @media screen and (min-width: 768px) {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 44px;
+    display: none;
+  }
+`;
+
+export const AssistanceImageWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    width: 548px;
+  }
+`;
+export const ButtonWrapper = styled.div`
+  display: none;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    margin-top: 44px;
+    align-items: center;
+    justify-content: center;
   }
 `;

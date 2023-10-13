@@ -19,9 +19,8 @@ type FooterProps = {content: Content}
 
 const Footer: React.FC<FooterProps> = ({ content: {footer} }) => {
 
-  console.log(footer);
   return (
-    <FooterContainer>
+    <FooterContainer id="contacts">
       <FooterBlocks>
         <BlockMenu>
           <TitleMenu>

@@ -1,18 +1,24 @@
+import { useEffect, useState, lazy, Suspense } from "react";
+import { Puff } from "react-loader-spinner";
+import { loadData } from "../helpers/dataLoader";
+import { Lang } from "../types/langTypes";
+import { Content } from "../types/contentType";
+import useLanguage from "../hooks/useLanguage";
+import GoUp from "../components/GoUp/GoUp.tsx";
 
-import { useEffect, useState } from 'react';
-import { loadData } from '../helpers/dataLoader';
-import { Lang } from '../types/langTypes';
-import { Content } from '../types/contentType';
-import Header from '../components/Header/Header.tsx';
-import Hero from '../components/Hero/Hero.tsx';
-import useLanguage from '../hooks/useLanguage';
-import Gallery from '../components/Gallery/Gallery';
-import Footer from "../components/Footer/Footer.tsx"
-import AboutRallies from '../components/AboutRallies/AboutRallies.tsx';
-import Donation from '../components/Donation/Donation.tsx';
-import Assistance from '../components/Assistance/Assistance.tsx';
-import Nets from '../components/Nets/Nets.tsx';
-import AboutUs from '../components/AboutUs/AboutUs.tsx';
+const Header = lazy(() => import("../components/Header/Header.tsx"));
+const Hero = lazy(() => import("../components/Hero/Hero.tsx"));
+const Gallery = lazy(() => import("../components/Gallery/Gallery"));
+const Footer = lazy(() => import("../components/Footer/Footer.tsx"));
+const AboutRallies = lazy(
+  () => import("../components/AboutRallies/AboutRallies.tsx")
+);
+const Donation = lazy(() => import("../components/Donation/Donation.tsx"));
+const Assistance = lazy(
+  () => import("../components/Assistance/Assistance.tsx")
+);
+const Nets = lazy(() => import("../components/Nets/Nets.tsx"));
+const AboutUs = lazy(() => import("../components/AboutUs/AboutUs.tsx"));
 
 function App() {
   const [lang, setLang] = useLanguage();
@@ -26,30 +32,45 @@ function App() {
     fetchData();
   }, [lang]);
 
-
   const languageChange = (selectedLanguage: Lang) => {
     return setLang(selectedLanguage);
   };
 
-
   return (
     content && (
       <>
-        <Header
-          languageChange={languageChange}
-          contentBtn={content.headerButton}
-        />
-        <Hero contentHero={content.heroSection} />
-        <AboutUs content={content}/>
-        <Nets content={content} />
-        <Donation content={content} />
-        <AboutRallies content={content} />
-        <Gallery
-          content={content}
-          lang={lang}
-        />
-        <Assistance content={content} />
-        <Footer content={content} />
+
+        <Suspense
+          fallback={
+            <Puff
+              height="80"
+              width="80"
+              radius={1}
+              color="#FFFF2E"
+              ariaLabel="puff-loading"
+              wrapperStyle={{}}
+              wrapperClass="spinner"
+              visible={true}
+            />
+          }
+        >
+          <Header
+            languageChange={languageChange}
+            contentBtn={content.headerButton}
+            activeLanguage={lang}
+          />
+       
+          <Hero contentHero={content.heroSection} />
+          <AboutUs content={content} />
+          <Nets content={content} />
+          <Donation content={content} />
+          <AboutRallies content={content} />
+          <Gallery content={content} lang={lang} />
+          <Assistance content={content} />
+          <Footer content={content} />
+          <GoUp />
+        </Suspense>
+
       </>
     )
   );

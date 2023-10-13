@@ -11,32 +11,33 @@
   margin: 0 auto;
   text-align: center;
   padding: 0;
+  transition: transform;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url('./assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+  src: url("./assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url('./assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  src: url("./assets/fonts/Roboto/Roboto-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url('./assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+  src: url("./assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: 700;
 }
 
 @font-face {
   font-family: Roboto;
-  src: url('./assets/fonts/Roboto/Roboto-Black.ttf') format('truetype');
+  src: url("./assets/fonts/Roboto/Roboto-Black.ttf") format("truetype");
   font-style: normal;
   font-weight: 900;
 }
@@ -44,6 +45,7 @@
 html {
   box-sizing: border-box;
   font-family: Roboto;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -53,11 +55,10 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
-
 }
 
 h1,
@@ -88,12 +89,26 @@ img {
   margin: 0 auto;
 }
 
+button {
+  border: none;
+  background: none;
+}
+#swiper-wrapper-237649d56a39b248 {
+  left: -50px;
+}
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
 .swiper-button-prev,
 .swiper-button-next {
   color: #fff;
 }
 .swiper-pagination.swiper-pagination-bullets {
-  bottom: 10px;
+  bottom: 15px !important;
 }
 .swiper-pagination-bullet {
   background-color: #d9d9d9 !important;
@@ -101,4 +116,34 @@ img {
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: #3a3a3a !important;
+}
+
+.image-gallery-content {
+  position: fixed !important;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  left: 0;
+
+  z-index: 100;
+  padding-bottom: 20px;
+}
+
+.image-gallery-content .image-gallery-slide .image-gallery-image {
+  padding-top: 84px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 24px;
+  max-height: calc(100vh - 150px) !important;
+  @media screen and (min-width: 768px) {
+    padding-top: 160px;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 40px;
+  }
+}
+.image-gallery-thumbnails {
+  padding: 0;
 }
