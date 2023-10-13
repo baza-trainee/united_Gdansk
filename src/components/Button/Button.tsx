@@ -3,7 +3,6 @@ import {
   BlickBtn,
   BlickSvg,
   Btn,
-  BlickName,
 } from "./Button.styled";
 
 type IPropsBtn = {
@@ -52,11 +51,7 @@ const Button = ({ buttonTitle, link }: IPropsBtn) => {
             </svg>
           </a>
         </BlickBtn>
-        <BlickName>
-          Phone:880224704<span> Name:Maksym Tishchenko</span>
-        </BlickName>
       </div>
-
       <div>
         <Btn type="button">
           <a href={link}>{buttonTitle}</a>

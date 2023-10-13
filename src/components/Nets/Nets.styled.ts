@@ -12,7 +12,7 @@ export const NetsSection = styled.section`
     flex-direction: column;
   }
   @media screen and (min-width: 1280px) {
-    margin: 120px;
+    margin: 60px 120px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;

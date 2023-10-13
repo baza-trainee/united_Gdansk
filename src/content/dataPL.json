@@ -7,16 +7,16 @@
   "title": "Zjednoczony. Gdańsk.",
   "about": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku, aby skupiać ludzi, których łączy wspólna idea i wspólnie rozmawiają o Ukrainie! O wszystkich naszych wydarzeniach informujemy na portalach społecznościowych, więc subskrybuj i bądź na bieżąco! Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu.",
   "nets": {
-    "title": "Plecenie sieci",
-    "text": "Jedną z działań naszego zespołu jest wolontariat. Od lutego 2023 roku nasz zespół organizuje sesje tworzenia maskujących siatek dla Sił Zbrojnych Ukrainy. To dokładnie taki przypadek, gdy nazwa naszej organizacji idealnie pasuje do atmosfery każdej sesji tworzenia - na siatkach czuć prawdziwe jedność dla wspólnego celu. Nasz zespół jest dumny z możliwości pomagania tym, którzy ryzykują swoim życiem dla naszego spokoju i bezpieczeństwa. Serdecznie dziękujemy wszystkim, którzy dołączyli do nas w tej szlachetnej sprawie, pomagając uczynić świat nieco bezpieczniejszym dla nas wszystkich."
+    "title": "Tkanie siatek maskujących",
+    "text": "Kolejną działalnością naszego zespołu jest wolontariat. Od lutego 2023 roku nasz zespół organizuje tkanie siatek ochronno-maskujących dla medyków pola walki w składzie Sił Zbrojnych Ukrainy. I to jest właśnie ten przypadek, gdy nazwa naszej organizacji doskonale wpisuje się w klimat każdej sesji tkania siatek – tu można poczuć prawdziwą jedność dla wspólnego celu. Nasz zespół jest dumny, że może pomóc tym, którzy ryzykują swoim życiem dla naszego pokoju i bezpieczeństwa. Jesteśmy głęboko wdzięczni wszystkim, którzy dołączyli do nas w tej szlachetnej sprawie, pomagając uczynić świat choć trochę bezpieczniejszym dla nas wszystkich."
   },
   "aboutUs": {
     "title": "O nas",
-    "text": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk, który powstał w polskim mieście Gdańsk, aby gromadzić ludzi zjednoczonych wspólną ideą i razem rozmawiać o Ukrainie! O wszystkich naszych działaniach informujemy w mediach społecznościowych, więc subskrybujcie nas i śledźcie aktualizacje! Nasza misja polega na jednoczeniu ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu."
+    "text": "Cześć! Jesteśmy zespołem Zjednoczeni Gdańsk/United Gdańsk, który powstał w polskim mieście Gdańsku. Naszą misją jest zjednoczenie ludzi z różnych krajów i kultur, aby wspierać Ukrainę w jej dążeniu do pokoju, stabilności i dobrobytu. Naszym celem jest zgromadzenie ludzi, których łączy idea o silnej i niezależnej Ukrainie, żeby razem mówić i nagłaśniać tematy związane z wojną, którą rozpętała Rosja w naszym kraju! O wszystkich naszych wydarzeniach informujemy w naszych sieciach społecznościowych, zasubskrybój nas, żeby być na bieżąco."
   },
   "aboutRollies": {
     "title": "Pro manifestacii",
-    "text": "Od sierpnia 2022 roku organizujemy manifestacje wsparcia dla Ukrainy oraz rozpowszechniamy informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze manifestacje stały się miejscem, gdzie ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom konfliktu. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzeniach na Ukrainie i wspierać ją w dążeniu do pokoju i wolności."
+    "text": "Od sierpnia 2022 roku organizujemy wiece na rzecz Ukrainy, a także rozpowszechniamy informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze wiece stały się miejscem, w którym ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom wojny. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzenia na Ukrainie i wesprą ją na drodze do pokoju i wolności."
   },
   "footer": {
     "titleMenu": "O nas",
@@ -32,12 +32,12 @@
     "title": "Galeria"
   },
   "donation": {
-    "title": "Wpłaty",
-    "text": "Każda pomoc jest ważna i zbliża naszą Zwycięstwo. Bez względu na to, czy to mały wkład czy duży udział, każda pomoc czyni różnicę. To nasz wspólny cel, i razem go osiągniemy. Dziękujemy za wasze wsparcie."
+    "title": "Darowizny",
+    "text": "Każda darowizna jest ważna i przybliża nasze zwycięstwo. Niezależnie od tego, czy jest duża czy mała, każda darowizna ma znaczenie. To jest nasz wspólny cel i wspólnie go osiągniemy. Dziękujmy za Wasze wsparcie."
   },
   "assistance": {
-    "title": "Pomoc żołnierzam Ukrainy",
-    "text": "Jak mówi współczesny ukraiński poeta Serhij Żadan, zwracamy się do was, drodzy bracia i siostry! Ojciec najbliższej przyjaciółki naszej Olenki służy obecnie w 46. Batalionie Desantowo-Szturmowym Sił Zbrojnych Ukrainy i obecnie razem z kolegami przebywa na froncie, na kierunku bachmuckim. Wszyscy rozumiemy, że sytuacja tam jest teraz bardzo trudna, a ci chłopcy naprawdę potrzebują naszej pomocy. Ich brygada potrzebuje wsparcia, konieczne jest zakupienie termowizora. Uruchomiono zbiórkę funduszy - celem jest zakup termowizora. Część funduszy już zebrano, ale potrzebujemy waszej pomocy! Zamierzamy zamówić termowizor w Polsce. Będziemy wdzięczni za każdą dotację i udostępnienie informacji. Raporty z naszych wydatków można znaleźć na naszych profilach społecznościowych.Szczegółowe informacje o zbiórce znajdują się na stronie Olenki, aby nie narażać rodziny przyjaciółki na niebezpieczeństwo."
+    "title": "Pomoc SZU",
+    "text": "Słowami współczesnego ukraińskiego poety Serhija Żadana zwracamy się do Was, drodzy bracia i siostry! Nasz zespół ostatnio otrzymał wiele zamówień na siatki ochronno-maskujące. W tym celu organizujemy zbiórkę pieniędzy na bazy tkackie dla siatek oraz tkaniny. Prosimy o wsparcie zbiórki. Raporty z naszych wydatków oraz bardziej szczegółowe informacje na temat zbiórki można znaleźć na naszych mediach społecznościowych."
   },
-  "donationButton": "Wpłać"
+  "donationButton": "Wesprzyj nas"
 }

@@ -3,7 +3,7 @@ export const events = [
     image: "./images/gallery/greatfulmarch.jpg",
     imageDouble: "./images/gallery/greatfulmarchx2.jpg",
     title: "06.11.2022 Хода подяки м.Ґданськ",
-    titlePL: "06.11.2022 Procesja dziękczynna w Gdańsku",
+    titlePL: "06.11.2022 Marsz wdzięczności  w Gdańsku",
     class: "first common",
     images: [
       {
@@ -48,7 +48,7 @@ export const events = [
     image: "./images/gallery/imagesPaint.jpg",
     imageDouble: "./images/gallery/imagesPaintx2.jpg",
     title: "Малювання плакатів",
-    titlePL: "Rysowanie plakatów",
+    titlePL: "Tworzenie plakatów",
     class: "second common",
     images: [
       {

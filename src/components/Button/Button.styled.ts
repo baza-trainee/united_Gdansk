@@ -4,7 +4,7 @@ export const DonateBtnsSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 70px;
 `;
 
 export const BlickSvg = styled.svg`
@@ -24,7 +24,8 @@ export const BlickBtn = styled.button`
   position: relative;
   background-color: #000000;
   border-radius: 5px;
-
+  cursor: poiner;
+  
   @media screen and (min-width: 768px) {
     width: 86px;
     height: 60px;
@@ -33,16 +34,19 @@ export const BlickBtn = styled.button`
 
 export const Btn = styled.button`
   display: block;
-  width: 196px;
-  height: 64px;
+  width: 280px;
+  height: 74px;
+  cursor: poiner;
+
   border-radius: 12px;
   padding: 16px;
+  border-radius: 5px;
   border: 5px solid #000000;
-  background-color: #fff;
+  background-color: #000000;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-
+  color: #fff;
   @media (max-width: 1050px) {
     margin: 0 auto;
   }

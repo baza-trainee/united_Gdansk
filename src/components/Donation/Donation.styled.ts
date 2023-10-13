@@ -7,7 +7,7 @@ export const DonationSection = styled.section`
     padding: 60px 110px;
   }
   @media screen and (min-width: 1280px) {
-    padding: 60px 120px;
+    padding: 36px 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
