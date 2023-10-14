@@ -69,15 +69,26 @@ export const AssistanceText = styled.p`
 `;
 
 export const ButtonPosition = styled.div`
+  position: relative;
   margin-top: 24px;
   @media screen and (min-width: 768px) {
     margin-top: 16px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
+
   @media screen and (min-width: 1280px) {
     margin-top: 44px;
-    display: none;
+    align-items: center;
+
+    section {
+      max-width: 100%;
+      justify-content: end;
+      gap: 60px;
+    }
+      div{
+        
+      }
   }
 `;
 
@@ -86,12 +97,26 @@ export const AssistanceImageWrapper = styled.div`
     width: 548px;
   }
 `;
+
 export const ButtonWrapper = styled.div`
   display: none;
+
   @media screen and (min-width: 1280px) {
-    display: flex;
+    display: none;
+
     margin-top: 44px;
     align-items: center;
     justify-content: center;
+  }
+`;
+
+export const ButtonAssistance = styled.img`
+  width: 86px;
+  height: 40px;
+
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
   }
 `;

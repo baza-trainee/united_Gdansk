@@ -27,7 +27,7 @@ export type Content = {
     email: string;
     titleSocial: string;
     developer: string;
-}
+  };
   donationButton: string;
   donation: {
     title: string;
@@ -36,5 +36,12 @@ export type Content = {
   assistance: {
     title: string;
     text: string;
+  };
+  blick: {
+    title: string;
+    text: string;
+    name: string;
+    phone: string;
+    copy: string;
   };
 };

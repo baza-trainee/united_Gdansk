@@ -3,7 +3,7 @@ import {
   DonationSection,
   DonationText,
   DonationTitle,
-  DonationInner
+  DonationInner,
 } from "./Donation.styled";
 import { Content } from "../../types/contentType";
 
@@ -15,6 +15,7 @@ const Donation = ({ content }: { content: Content }) => {
         <DonationText>{content?.donation.text}</DonationText>
 
         <Button
+          content={content}
           buttonTitle={content?.donationButton}
           link="https://send.monobank.ua/jar/4ZFV2rZJbe"
         />
