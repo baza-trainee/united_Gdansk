@@ -1,10 +1,10 @@
 import {
   AssistanceSection,
+  AssistanceWrapper,
   AssistanceAside,
   AssistanceImageWrapper,
   AssistanceText,
   ButtonWrapper,
-  AssistanceWrapper,
 } from './Assistance.styled';
 import '../../index.css';
 import Button from '../Button/Button';
