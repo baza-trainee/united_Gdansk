@@ -21,8 +21,9 @@ const copyToClipboard = (textToCopy: string | undefined) => {
 };
 
 const Blick = ({ content }: IBlick) => {
-  console.log("🚀 : content", content)
+  
   const [copied, setCopied] = useState(false);
+
   return (
     <BlickSection>
       <BlickTitle>{content?.blick.title}</BlickTitle>
