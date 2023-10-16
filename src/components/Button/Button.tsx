@@ -2,8 +2,10 @@ import {
   DonateBtnsSection,
   BlickBtn,
   BlickSvg,
+  BlickDotSvg,
   Btn,
   BlickName,
+  BlickSection
 } from "./Button.styled";
 
 type IPropsBtn = {
@@ -14,7 +16,7 @@ type IPropsBtn = {
 const Button = ({ buttonTitle, link }: IPropsBtn) => {
   return (
     <DonateBtnsSection>
-      <div>
+      <BlickSection>
         <BlickBtn type="button">
           <a href="#">
             <BlickSvg>
@@ -24,10 +26,7 @@ const Button = ({ buttonTitle, link }: IPropsBtn) => {
                 </symbol>
               </use>
             </BlickSvg>
-            <svg
-              width="10"
-              height="10"
-              style={{ top: "9px", position: "absolute", left: "22px" }}
+            <BlickDotSvg
               viewBox="0 0 10 10"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -49,13 +48,13 @@ const Button = ({ buttonTitle, link }: IPropsBtn) => {
                   <stop offset="1" stop-color="#E94F96" />
                 </linearGradient>
               </defs>
-            </svg>
+            </BlickDotSvg>
           </a>
         </BlickBtn>
         <BlickName>
           Phone:880224704<span> Name:Maksym Tishchenko</span>
         </BlickName>
-      </div>
+      </BlickSection>
 
       <div>
         <Btn type="button">
