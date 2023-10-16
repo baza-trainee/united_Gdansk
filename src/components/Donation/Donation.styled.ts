@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const DonationSection = styled.section`
   background-color: #0059b2;
@@ -19,8 +19,6 @@ export const DonationTitle = styled.h2`
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 20px;
-
-  text-align: left;
 `;
 
 export const DonationInner = styled.div`
@@ -28,7 +26,6 @@ export const DonationInner = styled.div`
     display: flex;
     width: 100%;
     align-items: center;
-
     justify-content: space-between;
   }
 `;
@@ -36,19 +33,20 @@ export const DonationInner = styled.div`
 export const DonationText = styled.p`
   font-size: 18px;
   font-weight: 400;
-  margin-top: 12px;
-  margin-bottom: 36px;
   line-height: 1.5;
   text-align: justify;
   color: #fff;
+
+  @media screen and (min-width: 320px) {
+    margin: 12px auto 12px;
+  }
+
   @media screen and (min-width: 768px) {
     width: 548px;
-    margin-top: 16px;
-    margin-left: 0px;
+    margin: 24px auto 16px;
   }
   @media screen and (min-width: 1280px) {
     width: 500px;
-    margin-top: 0px;
-    margin-left: 0px;
+    margin: 0;
   }
 `;
