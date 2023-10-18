@@ -56,6 +56,7 @@ export const BlockMenu = styled.div`
     margin-bottom: 24px;
   }
   @media (min-width: 768px) and (max-width: 1279px) {
+    margin-right: 64px;
     align-items: start;
   }
   @media (min-width: 1280px) {
