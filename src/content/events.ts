@@ -40,7 +40,7 @@ export const events = [
       },
       {
         thumbnail: "./images/gallery/march/marchNinth.jpg",
-        original: "./images/gallery/march/marchEigth2x.jpg",
+        original: "./images/gallery/march/marchNinth2x.jpg",
       },
     ],
   },
