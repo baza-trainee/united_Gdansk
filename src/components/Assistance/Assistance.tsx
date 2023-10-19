@@ -34,6 +34,7 @@ const Assistance = ({ content }: { content: Content }) => {
             <Button
               buttonTitle={content?.donationButton}
               link="https://send.monobank.ua/jar/4ZFV2rZJbe"
+              content={content}
             />
           </ButtonWrapper>
         </AssistanceAside>
