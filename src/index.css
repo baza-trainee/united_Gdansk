@@ -127,6 +127,12 @@ button {
 
   z-index: 100;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .image-gallery-content .image-gallery-slide .image-gallery-image {
@@ -144,6 +150,7 @@ button {
     padding-top: 40px;
   }
 }
-.image-gallery-thumbnails {
-  padding: 0;
+
+.image-gallery-thumbnail {
+  width: 100px !important;
 }

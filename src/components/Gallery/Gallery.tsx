@@ -74,7 +74,7 @@ const Gallery = ({ content, lang }: IGallery) => {
               slidesPerView: 3,
             },
           }}
-          style={{ paddingTop: "40px", paddingBottom: "35px" }}
+          style={{ paddingTop: "40px", paddingBottom: "55px" }}
         >
           {!modalIsOpen &&
             events.map((image) => (
