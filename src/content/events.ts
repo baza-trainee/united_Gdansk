@@ -88,8 +88,8 @@ export const events = [
       },
       {
         // thumbnail: "./images/gallery/paint/paintingEight.jpg",
-        original: "./images/gallery/paint/paintingEight2x.jpg",
-        thumbnail: "./images/gallery/paint/paintingEight2x.jpg",
+        original: "./images/gallery/paint/paintingEight2x.png",
+        thumbnail: "./images/gallery/paint/paintingEight2x.png",
       },
     ],
   },
