@@ -52,36 +52,44 @@ export const events = [
     class: "second common",
     images: [
       {
-        thumbnail: "./images/gallery/paint/paintingFirst.jpg",
+        // thumbnail: "./images/gallery/paint/paintingFirst.jpg",
         original: "./images/gallery/paint/paintingFirst2x.jpg",
+        thumbnail: "./images/gallery/paint/paintingFirst2x.jpg",
       },
       {
-        thumbnail: "./images/gallery/paint/paintingSecond.jpg",
+        // thumbnail: "./images/gallery/paint/paintingSecond.jpg",
         original: "./images/gallery/paint/paintingSecond2x.jpg",
+        thumbnail: "./images/gallery/paint/paintingSecond2x.jpg",
       },
       {
-        thumbnail: "./images/gallery/paint/paintingThird.jpg",
+        // thumbnail: "./images/gallery/paint/paintingThird.jpg",
         original: "./images/gallery/paint/paintingThird2x.jpg",
+        thumbnail: "./images/gallery/paint/paintingThird2x.jpg",
       },
       {
-        thumbnail: "./images/gallery/paint/paintingForth.jpg",
+        // thumbnail: "./images/gallery/paint/paintingForth.jpg",
         original: "./images/gallery/paint/paintingForth2x.jpg",
+        thumbnail: "./images/gallery/paint/paintingForth2x.jpg",
       },
       {
-        thumbnail: "./images/gallery/paint/paintingFifth.jpg",
+        // thumbnail: "./images/gallery/paint/paintingFifth.jpg",
         original: "./images/gallery/paint/paintingFifth2x.jpg",
+        thumbnail: "./images/gallery/paint/paintingFifth2x.jpg",
       },
       {
-        thumbnail: "./images/gallery/paint/paintingSixth.jpg",
+        // thumbnail: "./images/gallery/paint/paintingSixth.jpg",
         original: "./images/gallery/paint/paintingSixth2x.jpg",
+        thumbnail: "./images/gallery/paint/paintingSixth2x.jpg",
       },
       {
-        thumbnail: "./images/gallery/paint/paintingSeventh.jpg",
+        // thumbnail: "./images/gallery/paint/paintingSeventh.jpg",
         original: "./images/gallery/paint/paintingSeventh2x.jpg",
+        thumbnail: "./images/gallery/paint/paintingSeventh2x.jpg",
       },
       {
-        thumbnail: "./images/gallery/paint/paintingEight.jpg",
+        // thumbnail: "./images/gallery/paint/paintingEight.jpg",
         original: "./images/gallery/paint/paintingEight2x.jpg",
+        thumbnail: "./images/gallery/paint/paintingEight2x.jpg",
       },
     ],
   },
