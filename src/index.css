@@ -152,5 +152,12 @@ button {
 }
 
 .image-gallery-thumbnail {
+  @media screen and (max-width: 400px) {
+    width: 180px !important;
+  }
+  
+  @media screen and (max-width: 480px) {
+    width: 160px !important;
+  }
   width: 100px !important;
 }
