@@ -78,6 +78,6 @@ export const ImageWrapper = styled.div`
   transition: transform 500ms linear, transform 500ms ease-in-out;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
   }
 `;

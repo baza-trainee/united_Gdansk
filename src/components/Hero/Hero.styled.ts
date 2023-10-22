@@ -29,7 +29,7 @@ export const CarouselContainer = styled.section`
     @media (max-width: 1200px) {
       left: 28px;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 767px) {
       display: none;
     }
 
@@ -44,7 +44,7 @@ export const CarouselContainer = styled.section`
       right: 28px;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 767px) {
       display: none;
     }
     &:after {
