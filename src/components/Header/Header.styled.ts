@@ -120,7 +120,7 @@ export const MenuList = styled.nav`
   z-index: 10;
 
   @media (max-width: 1279px) {
-    padding: 76px 28px 30px 15px;
+    padding: 76px 28px 30px 36px;
     position: fixed;
     width: 20%;
     height: 100%;
@@ -148,7 +148,7 @@ export const MenuList = styled.nav`
       flex-direction: column;
       flex: 1 1 auto;
       align-items: flex-start;
-      row-gap: 24px;
+      row-gap: 44px;
     }
     & li {
       color: #3a3a3a;
