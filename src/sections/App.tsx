@@ -11,67 +11,68 @@ const Hero = lazy(() => import("../components/Hero/Hero.tsx"));
 const Gallery = lazy(() => import("../components/Gallery/Gallery"));
 const Footer = lazy(() => import("../components/Footer/Footer.tsx"));
 const AboutRallies = lazy(
-  () => import("../components/AboutRallies/AboutRallies.tsx")
+	() => import("../components/AboutRallies/AboutRallies.tsx")
 );
 const Donation = lazy(() => import("../components/Donation/Donation.tsx"));
 const Assistance = lazy(
-  () => import("../components/Assistance/Assistance.tsx")
+	() => import("../components/Assistance/Assistance.tsx")
 );
 const Nets = lazy(() => import("../components/Nets/Nets.tsx"));
 const AboutUs = lazy(() => import("../components/AboutUs/AboutUs.tsx"));
 
 function App() {
-  const [lang, setLang] = useLanguage();
-  const [content, setContent] = useState<Content | null>(null);
+	const [lang, setLang] = useLanguage();
+	const [content, setContent] = useState<Content | null>(null);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await loadData(lang);
-      setContent(data);
-    };
-    fetchData();
-  }, [lang]);
+	useEffect(() => {
+		const fetchData = async () => {
+			const data = await loadData(lang);
+			setContent(data);
+		};
+		fetchData();
+	}, [lang]);
 
-  const languageChange = (selectedLanguage: Lang) => {
-    return setLang(selectedLanguage);
-  };
+	const languageChange = (selectedLanguage: Lang) => {
+		return setLang(selectedLanguage);
+	};
 
-  return (
-    content && (
-      <>
-        <Suspense
-          fallback={
-            <Puff
-              height="80"
-              width="80"
-              radius={1}
-              color="#FFFF2E"
-              ariaLabel="puff-loading"
-              wrapperStyle={{}}
-              wrapperClass="spinner"
-              visible={true}
-            />
-          }
-        >
-          <Header
-            languageChange={languageChange}
-            contentBtn={content.headerButton}
-            activeLanguage={lang}
-          />
-       
-          <Hero contentHero={content.heroSection} />
-          <AboutUs content={content} />
-          <Nets content={content} />
-          <Donation content={content} />
-          <AboutRallies content={content} />
-          <Gallery content={content} lang={lang} />
-          <Assistance content={content} />
-          <Footer content={content} />
-          <GoUp />
-        </Suspense>
-      </>
-    )
-  );
+	return (
+		content && (
+			<>
+				<Suspense
+					fallback={
+						<Puff
+							height="80"
+							width="80"
+							radius={1}
+							color="#FFFF2E"
+							ariaLabel="puff-loading"
+							wrapperStyle={{}}
+							wrapperClass="spinner"
+							visible={true}
+						/>
+					}
+				>
+					<Header
+						languageChange={languageChange}
+						contentBtn={content.headerButton}
+						activeLanguage={lang}
+			
+					/>
+
+					<Hero contentHero={content.heroSection} />
+					<AboutUs content={content} />
+					<Nets content={content} />
+					<Donation content={content} />
+					<AboutRallies content={content} />
+					<Gallery content={content} lang={lang} />
+					<Assistance content={content} />
+					<Footer content={content} />
+					<GoUp />
+				</Suspense>
+			</>
+		)
+	);
 }
 
 export default App;
