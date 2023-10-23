@@ -6,10 +6,12 @@ import {
 	HeaderBar,
 	Logo,
 	MenuButton,
+	MenuButtonClose,
 	MenuLanguage,
 	MenuLeftSide,
+	MenuListBg,
 	MenuList,
-	MenuRightSide
+	MenuRightSide,
 } from "./Header.styled";
 
 const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLanguage }) => {
@@ -19,7 +21,15 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLangu
 
 
 	const openMenu = (): void => {
+		
 		setOpen(!open)
+		if (open) {
+			document.body.style.overflow = 'auto';
+
+		} else {
+			document.body.style.overflow = 'hidden'
+
+		}
 	}
 
 	const reloadPage = (): void => {
@@ -35,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLangu
 	)
 
 	return (
-		<HeaderBar className={`${open ? 'menu-open' : ''}`}>
+		<HeaderBar className={`${open ? 'menu-open  overlay' : ''}`} >
 			<MenuLeftSide>
 				<Logo onClick={reloadPage}>
 					<img src="./logo.svg" alt="logo" />
@@ -55,13 +65,20 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLangu
 					<span></span>
 				</MenuButton>
 
-				<MenuList>
-					<ul>
-						{renderMenuList}
-					</ul>
-				</MenuList>
+				<MenuListBg onClick={openMenu}>
+					<MenuList>
+						<ul>
+							{renderMenuList}
+						</ul>
+						<MenuButtonClose onClick={openMenu} className={open ? "fixed" : ""}>
+							<span></span>
+						</MenuButtonClose>
+					</MenuList>
+				</MenuListBg>
+
 			</MenuRightSide>
 		</HeaderBar>
+
 	)
 }
 
