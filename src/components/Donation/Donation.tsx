@@ -1,11 +1,6 @@
-import Button from "../Button/Button";
-import {
-  DonationSection,
-  DonationText,
-  DonationTitle,
-  DonationInner,
-} from "./Donation.styled";
-import { Content } from "../../types/contentType";
+import Button from '../Button/Button';
+import { DonationSection, DonationText, DonationTitle, DonationInner } from './Donation.styled';
+import { Content } from '../../types/contentType';
 
 const Donation = ({ content }: { content: Content }) => {
   return (

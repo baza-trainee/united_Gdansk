@@ -1,7 +1,7 @@
-import { Content } from "@/types/contentType";
-import { DonateBtnsSection, BlickBtn, Btn, BlickNameWrapper } from "./Button.styled";
-import { useState, useEffect, useRef } from "react";
-import Blick from "../Blick/Blick";
+import { Content } from '@/types/contentType';
+import { DonateBtnsSection, BlickBtn, Btn, BlickNameWrapper } from './Button.styled';
+import { useState, useEffect, useRef } from 'react';
+import Blick from '../Blick/Blick';
 
 type IPropsBtn = {
   buttonTitle: string;
@@ -10,7 +10,7 @@ type IPropsBtn = {
 };
 
 const Button = ({ buttonTitle, link, content }: IPropsBtn) => {
-  console.log("🚀 : content", content)
+  console.log('🚀 : content', content);
   const [blickModal, setBlickModal] = useState(false);
   const modalRef = useRef<HTMLDivElement | null>(null);
 
@@ -20,7 +20,7 @@ const Button = ({ buttonTitle, link, content }: IPropsBtn) => {
 
   useEffect(() => {
     const handleEscapeKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") {
+      if (event.key === 'Escape') {
         closeBlickModal();
       }
     };
@@ -32,36 +32,40 @@ const Button = ({ buttonTitle, link, content }: IPropsBtn) => {
     };
 
     if (blickModal) {
-      document.addEventListener("keydown", handleEscapeKey);
-      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener('keydown', handleEscapeKey);
+      document.addEventListener('mousedown', handleClickOutside);
     } else {
-      document.removeEventListener("keydown", handleEscapeKey);
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('keydown', handleEscapeKey);
+      document.removeEventListener('mousedown', handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener("keydown", handleEscapeKey);
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('keydown', handleEscapeKey);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [blickModal]);
 
   return (
     <DonateBtnsSection>
       {blickModal && (
-        <BlickNameWrapper  ref={modalRef}>
+        <BlickNameWrapper ref={modalRef}>
           <Blick content={content} />
         </BlickNameWrapper>
       )}
       <BlickBtn onClick={() => setBlickModal(true)}>
         <img
-          style={{ borderRadius: 5, cursor: "pointer" }}
+          style={{ borderRadius: 5, cursor: 'pointer' }}
           src="./blick.jpg"
           alt="blick"
         />
       </BlickBtn>
       <div>
         <Btn type="button">
-          <a href={link}>{buttonTitle}</a>
+          <a
+            rel="noreferrer noopener nofollow"
+            href={link}>
+            {buttonTitle}
+          </a>
         </Btn>
       </div>
     </DonateBtnsSection>
