@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Lang } from "../../types/langTypes";
 import { HeaderProps } from "../../types/headerTypes";
 
@@ -19,16 +19,23 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLangu
 	const [open, setOpen] = useState<boolean>(false);
 	const anchorLink = ["aboutUs", "activities", "gallery", "contacts"]
 
+	const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+	useEffect(() => {
+		handleResize()
+	}, []);
+
+	function handleResize() {
+		setWindowWidth(window.innerWidth);
+	}
 
 	const openMenu = (): void => {
-		
-		setOpen(!open)
-		if (open) {
-			document.body.style.overflow = 'auto';
 
+		setOpen(!open)
+		if (open || windowWidth > 1279) {
+			document.body.style.overflow = 'auto';
 		} else {
 			document.body.style.overflow = 'hidden'
-
 		}
 	}
 
@@ -64,7 +71,7 @@ const Header: React.FC<HeaderProps> = ({ languageChange, contentBtn, activeLangu
 				<MenuButton onClick={openMenu} className={open ? "fixed" : ""}>
 					<span></span>
 				</MenuButton>
-
+				{/* onClick={openMenu} */}
 				<MenuListBg onClick={openMenu}>
 					<MenuList>
 						<ul>

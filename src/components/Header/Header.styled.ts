@@ -99,46 +99,49 @@ export const MenuButton = styled.button`
 `;
 
 export const MenuButtonClose = styled.button`
-  .menu-open & {
-    display: block;
-    width: 30px;
-    height: 18px;
-    z-index: 13;
-    & span,
-    &::before,
-    &::after {
-      content: "";
-      transition: all 0.3s ease 0s;
-      right: 0;
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: black;
-    }
+  display: none;
+  @media (max-width: 1279px) {
+    .menu-open & {
+      display: block;
+      width: 30px;
+      height: 18px;
+      z-index: 13;
+      & span,
+      &::before,
+      &::after {
+        content: "";
+        transition: all 0.3s ease 0s;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+      }
 
-    & span {
-      top: calc(50% - 1px);
-    }
+      & span {
+        top: calc(50% - 1px);
+      }
 
-    &.fixed {
-      position: absolute;
-      top: 37px;
-      right: 30px;
-    }
+      &.fixed {
+        position: absolute;
+        top: 37px;
+        right: 30px;
+      }
 
-    span {
-      width: 0;
-    }
-    &::before,
-    &::after {
-    }
-    &::before {
-      top: calc(50% - 1px);
-      transform: rotate(-45deg);
-    }
-    &::after {
-      bottom: calc(50% - 1px);
-      transform: rotate(45deg);
+      span {
+        width: 0;
+      }
+      &::before,
+      &::after {
+      }
+      &::before {
+        top: calc(50% - 1px);
+        transform: rotate(-45deg);
+      }
+      &::after {
+        bottom: calc(50% - 1px);
+        transform: rotate(45deg);
+      }
     }
   }
 `;
@@ -165,9 +168,9 @@ export const MenuList = styled.nav`
   z-index: 12;
 
   @media (max-width: 1279px) {
-    padding-top: 15vh; 
-    padding-right: 28px; 
-    padding-bottom: 10vh; 
+    padding-top: 15vh;
+    padding-right: 28px;
+    padding-bottom: 10vh;
     padding-left: 36px;
     position: fixed;
     width: 100%;
