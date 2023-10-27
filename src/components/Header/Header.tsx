@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Lang } from "../../types/langTypes";
 import { HeaderProps } from "../../types/headerTypes";
+import {  useNavigate } from "react-router-dom";
 import {
   HeaderBar,
   Logo,
@@ -22,7 +23,8 @@ const Header: React.FC<HeaderProps> = ({
   const anchorLink = ["aboutUs", "activities", "gallery", "contacts"];
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
+
 
   useEffect(() => {
     handleResize();
@@ -48,7 +50,16 @@ const Header: React.FC<HeaderProps> = ({
   const renderMenuList: JSX.Element[] = contentBtn.map(
     (array: string, index: number): JSX.Element => (
       <li key={index}>
-        <a href={`#${anchorLink[index]}`}>{array}</a>
+        <a
+          href={`#${anchorLink[index]}`}
+          onClick={() => {
+            if (location.pathname !== "/") {
+              navigate("/");
+            }
+          }}
+        >
+          {array}
+        </a>
       </li>
     )
   );
