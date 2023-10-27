@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Lang } from "../../types/langTypes";
 import { HeaderProps } from "../../types/headerTypes";
-import { useNavigate } from "react-router-dom";
 import {
   HeaderBar,
   Logo,
