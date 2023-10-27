@@ -12,7 +12,7 @@
   },
   "aboutRollies": {
     "title": "Pro manifestacji",
-      "text": "Od sierpnia 2022 roku organizujemy wiece na rzecz Ukrainy, a także rozpowszechniamy informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze wiece stały się miejscem, w którym ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom wojny. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzenia na Ukrainie i wesprą ją na drodze do pokoju i wolności."
+    "text": "Od sierpnia 2022 roku organizujemy wiece na rzecz Ukrainy, a także rozpowszechniamy informacje o wydarzeniach kulturalnych dla Ukraińców w Gdańsku. Nasze wiece stały się miejscem, w którym ludzie mogą swobodnie wyrazić swoje wsparcie i wspólnie oddać hołd ofiarom wojny. Wierzymy, że nasze działania pomagają utrzymać uwagę na wydarzenia na Ukrainie i wesprą ją na drodze do pokoju i wolności."
   },
   "footer": {
     "titleMenu": "O nas",
@@ -46,5 +46,10 @@
     "name": "Anna Liehotina",
     "phone": "+48 571 288 114",
     "copy": "Po autoryzacji płatności podtrwierdź transaksję w aplikacji bankowej"
+  },
+  "errorPage": {
+    "errorPageTitle": "Strona, której szukasz, została przeniesiona lub nie istnieje.",
+    "errorPageBtn": "Główna",
+    "errorPage404": "404"
   }
 }
