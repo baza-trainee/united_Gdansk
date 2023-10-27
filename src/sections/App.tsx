@@ -27,7 +27,7 @@ function App() {
   const [lang, setLang] = useLanguage();
   const [content, setContent] = useState<Content | null>(null);
   const path = window.location.hash;
-  console.log("🚀 : path",path );
+  console.log("🚀 : path", window.location.pathname)
 
   useEffect(() => {
     const fetchData = async () => {
