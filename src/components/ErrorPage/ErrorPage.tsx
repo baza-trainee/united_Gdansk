@@ -19,6 +19,9 @@ const ErrorPage = () => {
     fetchData();
   }, [lang]);
 
+
+
+  
   const languageChange = (selectedLanguage: Lang) => {
     return setLang(selectedLanguage);
   };
