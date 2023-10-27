@@ -35,9 +35,9 @@ function Main() {
   const [lang, setLang] = useLanguage();
   const [content, setContent] = useState<Content | null>(null);
   const history = useLocation();
-  console.log("🚀 : history", history);
+  // console.log("🚀 : history", history);
 
-  console.log(anchorLink.includes(history.hash));
+  // console.log(anchorLink.includes(history.hash));
 
   useEffect(() => {
     const fetchData = async () => {
@@ -45,7 +45,19 @@ function Main() {
       setContent(data);
     };
     fetchData();
-  }, [lang]);
+  }, [history.hash, lang]);
+
+  useEffect(() => {
+    if (history.hash) {
+      setTimeout(() => {
+        const section = document.querySelector(location.hash);
+
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 5000);
+    }
+  }, [history.hash]);
 
   const languageChange = (selectedLanguage: Lang) => {
     return setLang(selectedLanguage);
