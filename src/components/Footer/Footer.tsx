@@ -25,7 +25,16 @@ const Footer: React.FC<FooterProps> = ({ content: { footer } }) => {
       <FooterBlocks>
         <BlockMenu>
           <TitleMenu>
-            <a href="#aboutUs">{footer.titleMenu}</a>
+            <a
+              onClick={() => {
+                if (location.pathname !== "/") {
+                  navigate(`/#aboutUs`);
+                }
+              }}
+              href="#aboutUs"
+            >
+              {footer.titleMenu}
+            </a>
           </TitleMenu>
           <ListMenu>
             <ul>
