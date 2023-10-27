@@ -44,4 +44,9 @@ export type Content = {
     phone: string;
     copy: string;
   };
+  errorPage: {
+    errorPageTitle: string;
+    errorPageBtn: string;
+    errorPage404: string;
+  };
 };
