@@ -22,7 +22,14 @@ const Assistance = lazy(
 const Nets = lazy(() => import("../components/Nets/Nets.tsx"));
 const AboutUs = lazy(() => import("../components/AboutUs/AboutUs.tsx"));
 
-const anchorLink = ["#aboutUs", "#activities", "#gallery", "#contacts", ""];
+const anchorLink = [
+  "#aboutUs",
+  "#activities",
+  "#gallery",
+  "#contacts",
+  "",
+  "/",
+];
 
 function Main() {
   const [lang, setLang] = useLanguage();
@@ -46,7 +53,8 @@ function Main() {
 
   return (
     content &&
-    (!anchorLink.includes(history.hash) ? (
+    (!anchorLink.includes(history.hash) ||
+    !anchorLink.includes(history.pathname) ? (
       <ErrorPage />
     ) : (
       <>
