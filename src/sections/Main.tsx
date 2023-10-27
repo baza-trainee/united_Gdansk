@@ -1,4 +1,4 @@
-import { useEffect, useState, lazy, Suspense } from "react";
+import { useEffect, useState, lazy, Suspense, useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Puff } from "react-loader-spinner";
 import { loadData } from "../helpers/dataLoader.ts";
@@ -35,9 +35,9 @@ function Main() {
   const [lang, setLang] = useLanguage();
   const [content, setContent] = useState<Content | null>(null);
   const history = useLocation();
-  console.log("🚀 : history", history);
+  // console.log("🚀 : history", history);
 
-  console.log(anchorLink.includes(history.hash));
+  // console.log(anchorLink.includes(history.hash));
 
   useEffect(() => {
     const fetchData = async () => {
@@ -46,6 +46,17 @@ function Main() {
     };
     fetchData();
   }, [lang]);
+
+  useLayoutEffect(() => {
+    console.log(history.hash);
+    if (history.hash) {
+      const section = document.querySelector(location.hash);
+      console.log("🚀 : section", section);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
 
   const languageChange = (selectedLanguage: Lang) => {
     return setLang(selectedLanguage);
@@ -94,3 +105,6 @@ function Main() {
 }
 
 export default Main;
+function useLayoutEffectSnipper(arg0: () => void, arg1: never[]) {
+  throw new Error("Function not implemented.");
+}

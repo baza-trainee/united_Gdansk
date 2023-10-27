@@ -1,4 +1,4 @@
-
+import { useNavigate } from "react-router-dom";
 import {
   FooterContainer,
   FooterBlocks,
@@ -15,9 +15,10 @@ import {
 } from "./Footer.styled";
 import { Content } from "@/types/contentType";
 
-type FooterProps = {content: Content}
+type FooterProps = { content: Content };
 
-const Footer: React.FC<FooterProps> = ({ content: {footer} }) => {
+const Footer: React.FC<FooterProps> = ({ content: { footer } }) => {
+  const navigate = useNavigate();
 
   return (
     <FooterContainer id="contacts">
@@ -29,10 +30,28 @@ const Footer: React.FC<FooterProps> = ({ content: {footer} }) => {
           <ListMenu>
             <ul>
               <li>
-                <a href="#activities">{footer.diaMenu}</a>
+                <a
+                  onClick={() => {
+                    if (location.pathname !== "/") {
+                      navigate(`/#activities`);
+                    }
+                  }}
+                  href="#activities"
+                >
+                  {footer.diaMenu}
+                </a>
               </li>
               <li>
-                <a href="#gallery">{footer.galeryMenu}</a>
+                <a
+                  onClick={() => {
+                    if (location.pathname !== "/") {
+                      navigate(`/#gallery`);
+                    }
+                  }}
+                  href="#gallery"
+                >
+                  {footer.galeryMenu}
+                </a>
               </li>
             </ul>
           </ListMenu>

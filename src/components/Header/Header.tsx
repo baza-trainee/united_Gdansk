@@ -46,6 +46,18 @@ const Header: React.FC<HeaderProps> = ({
     window.location.reload();
   };
 
+//   const scrollToSection = (sectionId: string) => {
+//     console.log("🚀 : sectionId", sectionId);
+//     const targetSection = document.getElementById(sectionId);
+//     console.log("🚀 : targetSection", targetSection);
+//     if (targetSection) {
+//       targetSection.scrollIntoView({
+//         behavior: "smooth",
+//         block: "center",
+//       });
+//     }
+//   };
+
   const renderMenuList: JSX.Element[] = contentBtn.map(
     (array: string, index: number): JSX.Element => (
       <li key={index}>
@@ -53,7 +65,8 @@ const Header: React.FC<HeaderProps> = ({
           href={`#${anchorLink[index]}`}
           onClick={() => {
             if (location.pathname !== "/") {
-              navigate("/");
+              navigate(`/#${anchorLink[index]}`);
+            //   scrollToSection(`/#${anchorLink[index]}`);
             }
           }}
         >

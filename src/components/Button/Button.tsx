@@ -10,7 +10,6 @@ type IPropsBtn = {
 };
 
 const Button = ({ buttonTitle, link, content }: IPropsBtn) => {
-  console.log('🚀 : content', content);
   const [blickModal, setBlickModal] = useState(false);
   const modalRef = useRef<HTMLDivElement | null>(null);
 
