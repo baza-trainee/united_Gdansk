@@ -1,15 +1,16 @@
 import { useEffect, useState, lazy, Suspense } from "react";
 import { Puff } from "react-loader-spinner";
-import { loadData } from "../helpers/dataLoader";
-import { Lang } from "../types/langTypes";
-import { Content } from "../types/contentType";
-import useLanguage from "../hooks/useLanguage";
+import { loadData } from "../helpers/dataLoader.ts";
+import { Lang } from "../types/langTypes.ts";
+import { Content } from "../types/contentType.ts";
+import useLanguage from "../hooks/useLanguage.ts";
 import GoUp from "../components/GoUp/GoUp.tsx";
-import ErrorPage from "../components/ErrorPage/ErrorPage.tsx";
+
+// import ErrorPage from "../components/ErrorPage/ErrorPage.tsx";
 
 const Header = lazy(() => import("../components/Header/Header.tsx"));
 const Hero = lazy(() => import("../components/Hero/Hero.tsx"));
-const Gallery = lazy(() => import("../components/Gallery/Gallery"));
+const Gallery = lazy(() => import("../components/Gallery/Gallery.tsx"));
 const Footer = lazy(() => import("../components/Footer/Footer.tsx"));
 const AboutRallies = lazy(
   () => import("../components/AboutRallies/AboutRallies.tsx")
@@ -21,13 +22,10 @@ const Assistance = lazy(
 const Nets = lazy(() => import("../components/Nets/Nets.tsx"));
 const AboutUs = lazy(() => import("../components/AboutUs/AboutUs.tsx"));
 
-const links = ["#aboutUs", "#activities", "#gallery", "#contacts", ""];
 
-function App() {
+function Main() {
   const [lang, setLang] = useLanguage();
   const [content, setContent] = useState<Content | null>(null);
-  const path = window.location.hash;
-  console.log("🚀 : path", window.location.pathname)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -42,10 +40,9 @@ function App() {
   };
 
   return (
-    content &&
-    (!links.includes(path) || !(window.location.pathname === "/") ? (
-      <ErrorPage />
-    ) : (
+    content && (
+      // <ErrorPage />
+      // ) : (
       <>
         <Suspense
           fallback={
@@ -78,8 +75,9 @@ function App() {
           <GoUp />
         </Suspense>
       </>
-    ))
+    )
+    // ))
   );
 }
 
-export default App;
+export default Main;
