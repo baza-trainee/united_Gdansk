@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Lang } from "../../types/langTypes";
 import { HeaderProps } from "../../types/headerTypes";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
   HeaderBar,
   Logo,
@@ -24,7 +24,6 @@ const Header: React.FC<HeaderProps> = ({
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
 
   const navigate = useNavigate();
-
 
   useEffect(() => {
     handleResize();
@@ -68,7 +67,7 @@ const Header: React.FC<HeaderProps> = ({
     <HeaderBar className={`${open ? "menu-open  overlay" : ""}`}>
       <MenuLeftSide>
         <Logo onClick={reloadPage}>
-          <img src="./logo.svg" alt="logo" />
+          <img onClick={() => navigate("/")} src="./logo.svg" alt="logo" />
         </Logo>
 
         <MenuLanguage>
