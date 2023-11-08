@@ -25,11 +25,11 @@ export const FooterBlocks = styled.div`
   margin-bottom: 32px;
   font-size: 16px;
   line-height: 24px;
-  
+
   @media (min-width: 768px) and (max-width: 1279px) {
     flex-direction: row;
     margin-bottom: 40px;
-    }
+  }
   @media (min-width: 1280px) {
     flex-direction: row;
     margin-bottom: 32px;
@@ -45,7 +45,7 @@ export const Developer = styled.p`
   text-align: start;
   @media (max-width: 767px) {
     width: 300px;
-   }
+  }
 `;
 
 export const BlockMenu = styled.div`
@@ -64,6 +64,7 @@ export const BlockMenu = styled.div`
     align-items: start;
   }
 `;
+
 export const BlockContact = styled.div`
   display: flex;
   flex-direction: column;
@@ -77,10 +78,11 @@ export const BlockContact = styled.div`
   }
   @media (min-width: 1280px) {
     align-items: start;
-    }
+  }
 `;
+
 export const BlockSocial = styled.div`
-display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   @media (max-width: 767px) {
@@ -90,12 +92,13 @@ display: flex;
     align-items: start;
   }
 `;
+
 export const ListSocial = styled.div`
   display: flex;
   flex-direction: row;
   gap: 12px;
   cursor: pointer;
-  
+
   @media (min-width: 768px) {
     justify-content: start;
   }
@@ -111,8 +114,7 @@ export const TitleMenu = styled.h3`
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 18px;
-  
-  
+
   @media (min-width: 768px) {
     font-weight: 600;
     margin-bottom: 12px;
@@ -123,7 +125,7 @@ export const TitleContact = styled.h3`
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 12px;
-    
+
   @media (min-width: 768px) {
     font-weight: 600;
     margin-bottom: 12px;
@@ -135,7 +137,7 @@ export const TitleSocial = styled.h3`
   font-weight: 700;
   margin-bottom: 12px;
   text-align: start;
-  
+
   @media (min-width: 768px) and (max-width: 1279px) {
     font-weight: 600;
     width: 200px;
@@ -146,24 +148,27 @@ export const ListMenu = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
+
   li {
     font-family: Roboto;
     color: #fff;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    padding-bottom: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
   }
+
   @media (min-width: 768px) {
-  text-align: start;
+    text-align: start;
   }
 `;
+
 export const ListContact = styled.ul`
   display: flex;
   gap: 12px;
-  
-    li {
+
+  li {
     font-family: Roboto;
     color: #fff;
     font-size: 16px;
@@ -175,4 +180,10 @@ export const ListContact = styled.ul`
   @media (min-width: 768px) {
     text-align: start;
   }
+`;
+
+export const ListSectionsItem = styled.li`
+  // @media (max-width: 1240px) {
+  //   margin-bottom: 10px;
+  // }
 `;

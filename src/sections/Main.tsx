@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState, lazy, Suspense } from "react";
 import { useLocation } from "react-router-dom";
 import { Puff } from "react-loader-spinner";

@@ -12,6 +12,7 @@ import {
   ListMenu,
   ListContact,
   ListSocial,
+  ListSectionsItem,
 } from "./Footer.styled";
 import { Content } from "@/types/contentType";
 
@@ -38,7 +39,7 @@ const Footer: React.FC<FooterProps> = ({ content: { footer } }) => {
           </TitleMenu>
           <ListMenu>
             <ul>
-              <li>
+              <ListSectionsItem>
                 <a
                   onClick={() => {
                     if (location.pathname !== "/") {
@@ -49,7 +50,7 @@ const Footer: React.FC<FooterProps> = ({ content: { footer } }) => {
                 >
                   {footer.diaMenu}
                 </a>
-              </li>
+              </ListSectionsItem>
               <li>
                 <a
                   onClick={() => {
