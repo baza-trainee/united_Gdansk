@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 export const DonateBtnsSection = styled.div`
   display: flex;
@@ -49,15 +49,22 @@ export const Btn = styled.button`
   border-radius: 12px;
   padding: 16px;
   border-radius: 5px;
-  border: 5px solid #000000;
   background-color: #000000;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
   color: #fff;
+  transition: background-color 0.5s ease;
+
 
   @media (min-width: 500px) {
     width: 280px;
+  }
+
+  :hover {
+    background-color: #ffff00;
+    color: #000;
+    border: none;
   }
 `;
 export const BlickName = styled.p`
