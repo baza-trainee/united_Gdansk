@@ -18,13 +18,13 @@ export const GoUpButton = styled.button`
     background-color: active;
     fill: #1414b8;
   }
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
 
   @media screen and (min-width: 768px) {
     right: 35px;
-    width: 34px;
-    height: 34px;
+    width: 40px;
+    height: 40px;
   }
 
   @media screen and (min-width: 1280px) {
