@@ -18,17 +18,17 @@ export const GoUpButton = styled.button`
     background-color: active;
     fill: #1414b8;
   }
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 
   @media screen and (min-width: 768px) {
     right: 35px;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 44px;
-    height: 44px;
+    width: 60px;
+    height: 60px;
   }
 `;
